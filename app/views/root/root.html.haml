@@ -1,0 +1,41 @@
+#sidebar
+  %p
+    This sidebar is in the root action template, in the root controller, in app/views/root/root.html.html
+  %p
+    %ul
+      %li navigation
+      %li home
+      %li contact
+      %li etc
+#content
+  %h1
+    Welcome to your new web site!
+  %p
+    This web site is powered by a Rails 3 web application.  Lots of documentation is available
+    for Rails.  Start
+    %a{:href => 'http://weblog.rubyonrails.org/2010/8/28/rails-has-great-documentation'} here.
+  %p
+    The contents of this page are in the root action template, in the root controller,
+    in app/views/root/root.html.haml.  The template files for this web application project are
+    in
+    %a{:src => 'http://haml-lang.com/docs.html'} HAML
+    , which is a powerful shorthand notation for quickly writing HTML that coordinates
+    beautifully with SCSS for styling the page.  The HAML documentation is
+    %a{:src => 'http://haml-lang.com/docs/yardoc/file.HAML_REFERENCE.html'} here.
+  %p
+    This page is styled using
+    %a{:href => 'http://www.blueprintcss.org/'} Blueprint.
+    You can see
+    demos of what Blueprint can provide,
+    %a{:src => 'http://www.blueprintcss.org/tests/'} here.
+    This project uses the Compass implementation of Blueprint in SCSS, documented
+    %a{:src => 'http://compass-style.org/docs/reference/blueprint/'} here.
+  %p
+    The CSS styling for this page was generated from the SCSS file in
+    app/stylesheets/screen.scss.  There is a section at the bottom of the file that activates
+    the grid and the background colors on the various page sections provided by the Blueprint
+    styles directly above it.  You probably want to start your web site project by locating
+    that file and removing the grid and background colors.  That file is where you should
+    start adding your custom styles.
+  %p
+    Place your images into public/images.
