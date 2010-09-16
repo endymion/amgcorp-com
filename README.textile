@@ -1,0 +1,19 @@
+h1. AMGCorp.com
+
+This is a Rails 3 app for powering AMGCorp.com.
+
+h1. Technology
+
+The web site is powered by a Rails 3 app.  It uses SQLite3 for a database.
+
+h1. Code
+
+The code is hosted on GitHub at: http://github.com/endymion/amgcorp-com
+
+h1. Hosting
+
+The site is hosted at Heroku at: http://amgcorp-com.heroku.com
+
+h1. Domain Name
+
+The domain name amgcorp.com is mapped from Dreamhost to Heroku, to support the URL http://amgcorp.com
