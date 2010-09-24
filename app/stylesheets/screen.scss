@@ -49,16 +49,20 @@ body.two-col {
     @include column($content-columns, true); } }
 
 // Added by Appleseed to make the default sections more visible.  You should probably remove this.
-body.two-col {
-  #container {
-    @include showgrid
-  }
-  #header, #footer {
-    background-color: #DDD;
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-  #content {
-    background-color: #EEE;
-  }
+
+body {
+  background-color: #555555;
+  background-image: url("/images/global/background.gif");
+  background-position: top center;
+  background-repeat: repeat-y;
 }
+
+#content {
+  min-height: 1000px;
+  width:100%;
+  position:absolute;
+  left: 50%;
+  top:0px;
+  background-image: url(/images/background_images/_placeholder.jpg);
+}
+
