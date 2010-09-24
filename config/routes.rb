@@ -14,7 +14,7 @@ AmgcorpCom::Application.routes.draw do
   match 'partner_venues' => 'root#partner_venues'
   match 'services' => 'root#services'
   match 'contact' => 'root#contact'
-  match 'press' => 'root#presss'
+  match 'press' => 'root#press'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
