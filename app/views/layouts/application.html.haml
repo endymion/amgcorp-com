@@ -8,5 +8,23 @@
       = stylesheet_link_tag 'compiled/ie.css', :media => 'screen, projection'
     = javascript_include_tag :defaults
     = csrf_meta_tag
-  %div#content
-    = yield
+  %div#nav
+    %img{:src => "/images/global/amglogo.png", :width => "207", :height => "67px" }
+    %ul
+      %li
+        = link_to 'About Us', about_us_path
+      %li
+        = link_to 'Profiles', profiles_path
+      %li
+        = link_to 'Owned Venues', owned_venues_path
+      %li
+        = link_to 'Operated Venues', operated_venues_path
+      %li
+        = link_to 'Partner Venues', partner_venues_path
+      %li
+        = link_to 'Services', services_path
+      %li
+        = link_to 'Contact', contact_path
+      %li
+        = link_to 'Press', press_path
+  = yield

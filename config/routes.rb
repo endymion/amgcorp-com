@@ -1,7 +1,20 @@
 AmgcorpCom::Application.routes.draw do
-  root :to => 'root#root'
+  root :to => 'root#about_us'
 
-  get "root/root"
+  get "root/about_us"
+
+  # These are set up as individual named routes when a single catchall would
+  # work just fine, because we know that some of these will become full resources
+  # later and we want to use the resource_path names in links in the app from
+  # the beginning.
+  match 'about_us' => 'root#about_us'
+  match 'profiles' => 'root#profiles'
+  match 'owned_venues' => 'root#owned_venues'
+  match 'operated_venues' => 'root#operated_venues'
+  match 'partner_venues' => 'root#partner_venues'
+  match 'services' => 'root#services'
+  match 'contact' => 'root#contact'
+  match 'press' => 'root#presss'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
