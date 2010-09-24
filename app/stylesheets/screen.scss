@@ -31,22 +31,6 @@ body.bp {
 form.bp {
   @include blueprint-form; }
 
-// Page layout can be done using mixins applied to your semantic classes and IDs:
-body.two-col {
-  #container {
-    @include container; }
-  #header, #footer {
-    @include column($blueprint-grid-columns); }
-  #sidebar {
-    // One third of the grid columns, rounding down. With 24 cols, this is 8.
-    $sidebar-columns: floor($blueprint-grid-columns / 3);
-    @include column($sidebar-columns); }
-  #content {
-    // Two thirds of the grid columns, rounding up.
-    // With 24 cols, this is 16.
-    $content-columns: ceil(2 * $blueprint-grid-columns / 3);
-    // true means it's the last column in the row
-    @include column($content-columns, true); } }
 
 // Added by Appleseed to make the default sections more visible.  You should probably remove this.
 
@@ -55,14 +39,50 @@ body {
   background-image: url("/images/global/background.gif");
   background-position: top center;
   background-repeat: repeat-y;
+  font-family: "Museo 300";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/Museo300-Regular.otf") format("opentype"),
+  url("/fonts/Museo300-Regular.eot") format("embedded-opentype");
+  color:#ffffff;
 }
 
 #content {
-  min-height: 1000px;
-  width:100%;
-  position:absolute;
-  left: 50%;
-  top:0px;
   background-image: url(/images/background_images/_placeholder.jpg);
+  background-repeat: no-repeat;
+  min-height: 1000px;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  padding:180px 0px 50px 10px;
 }
 
+#nav {
+  width:200px;
+  margin: 0px 0px 0px -220px;
+  padding:10px;
+  position:absolute;
+  left:50%;
+  top:70px;
+   
+   img{
+     margin:0px 0px 15px 110px;
+   }
+   
+   ul{
+     text-align:right;
+     list-style-type:none;
+     font-size:14px;
+   }
+   
+   li{
+     border-top:1px dotted;
+     border-color:#565757;
+     padding: 15px 0px;
+   }
+   
+   li:first-child {
+     border:0px;
+   }
+}

@@ -381,7 +381,7 @@ body.bp .bottom {
 }
 /* line 8, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_debug.scss */
 body.bp .showgrid {
-  background: url('/images/grid.png?1285361085');
+  background: url('/images/grid.png?1284654748');
 }
 /* line 4, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
 body.bp .error {
@@ -503,61 +503,57 @@ form.bp textarea {
   height: 250px;
 }
 
-/* line 36, ../../../app/stylesheets/screen.scss */
-body.two-col #container {
-  width: 950px;
-  margin: 0 auto;
-  overflow: hidden;
-  *zoom: 1;
-}
-/* line 38, ../../../app/stylesheets/screen.scss */
-body.two-col #header, body.two-col #footer {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 950px;
-}
-/* line 139, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.two-col #header, * html body.two-col #footer {
-  overflow-x: hidden;
-}
-/* line 40, ../../../app/stylesheets/screen.scss */
-body.two-col #sidebar {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 310px;
-}
-/* line 139, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.two-col #sidebar {
-  overflow-x: hidden;
-}
-/* line 44, ../../../app/stylesheets/screen.scss */
-body.two-col #content {
-  display: inline;
-  float: left;
-  margin-right: 0;
-  width: 630px;
-}
-/* line 139, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.two-col #content {
-  overflow-x: hidden;
-}
-
-/* line 53, ../../../app/stylesheets/screen.scss */
+/* line 37, ../../../app/stylesheets/screen.scss */
 body {
   background-color: #555555;
   background-image: url("/images/global/background.gif");
   background-position: top center;
   background-repeat: repeat-y;
+  font-family: "Museo 300";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/Museo300-Regular.otf") format("opentype"), url("/fonts/Museo300-Regular.eot") format("embedded-opentype");
+  color: #ffffff;
 }
 
-/* line 60, ../../../app/stylesheets/screen.scss */
+/* line 50, ../../../app/stylesheets/screen.scss */
 #content {
+  background-image: url(/images/background_images/_placeholder.jpg);
+  background-repeat: no-repeat;
   min-height: 1000px;
   width: 100%;
   position: absolute;
   left: 50%;
   top: 0px;
-  background-image: url(/images/background_images/_placeholder.jpg);
+  padding: 180px 0px 50px 10px;
+}
+
+/* line 61, ../../../app/stylesheets/screen.scss */
+#nav {
+  width: 200px;
+  margin: 0px 0px 0px -220px;
+  padding: 10px;
+  position: absolute;
+  left: 50%;
+  top: 70px;
+}
+/* line 69, ../../../app/stylesheets/screen.scss */
+#nav img {
+  margin: 0px 0px 15px 110px;
+}
+/* line 73, ../../../app/stylesheets/screen.scss */
+#nav ul {
+  text-align: right;
+  list-style-type: none;
+  font-size: 14px;
+}
+/* line 79, ../../../app/stylesheets/screen.scss */
+#nav li {
+  border-top: 1px dotted;
+  border-color: #565757;
+  padding: 15px 0px;
+}
+/* line 85, ../../../app/stylesheets/screen.scss */
+#nav li:first-child {
+  border: 0px;
 }
