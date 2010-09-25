@@ -39,18 +39,17 @@ body {
   background-image: url("/images/global/background.gif");
   background-position: top center;
   background-repeat: repeat-y;
-  font-family: "light";
+  font-family: "500";
   font-style: normal;
   font-weight: normal;
   color:#ffffff;
 }
 
 @font-face {
-  font-family: "light";
+  font-family: "500";
   font-style: normal;
   font-weight: normal;
-  src: url("/fonts/advent.otf") format("opentype");
-  src: url("/fonts/500.eot") format("opentype");
+  src: url("/fonts/museo500.eot") format("opentype");
 }
 
 #content {
