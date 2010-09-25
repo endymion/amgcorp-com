@@ -1,4 +1,6 @@
 AmgcorpCom::Application.routes.draw do
+  resources :press_releases
+
   root :to => 'root#about_us'
 
   get "root/about_us"

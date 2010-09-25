@@ -1,0 +1,10 @@
+%h1= t '.title'
+%p
+  = link_to t('back'), press_releases_path
+  = link_to t('edit'), edit_press_release_path(@press_release)
+
+%dl
+  %dt= PressRelease.human_attribute_name :title
+  %dd= @press_release.title
+  %dt= PressRelease.human_attribute_name :body
+  %dd= @press_release.body

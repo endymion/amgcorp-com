@@ -1,0 +1,18 @@
+%h1= t('.title')
+%p= link_to t('.new_press_release'), new_press_release_path
+
+%table
+  %thead
+    %tr
+      %th= PressRelease.human_attribute_name :title
+      %th= PressRelease.human_attribute_name :body
+      %th{:colspan => 3}= t 'actions'
+  
+  %tbody
+    - for press_release in @press_releases
+      %tr{ :class => cycle(:odd, :even) }
+        %td= press_release.title
+        %td= press_release.body
+        %td.action= link_to t('show'), press_release
+        %td.action= link_to t('edit'), edit_press_release_path(press_release)
+        %td.action= link_to t('destroy'), press_release, :confirm => t('are_you_sure'), :method => :delete

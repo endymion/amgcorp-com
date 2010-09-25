@@ -1,0 +1,5 @@
+Press:
+  title
+  body
+  thumbnail image
+  attachment (pdf)
