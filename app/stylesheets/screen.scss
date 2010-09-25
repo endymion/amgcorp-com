@@ -42,9 +42,13 @@ body {
   font-family: "Museo 300";
   font-style: normal;
   font-weight: normal;
-  src: url("/fonts/Museo300-Regular.otf") format("opentype"),
-  url("/fonts/Museo300-Regular.eot") format("embedded-opentype");
-  color:#ffffff;
+}
+
+@font-face {
+  font-family: "Museo 300";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/Museo300-Regular.otf") format("opentype");
 }
 
 #content {
