@@ -1,0 +1,406 @@
+/*
+-----------------------------------------------
+Nice Web Type likes Museo and Sans
+Author:	Tim Brown
+Date:	9 July 2009
+
+Revisions:
+
+2 Nov 2009
+	Updated @font-face syntax as per http://nicewebtype.com/x/u
+-----------------------------------------------*/
+
+
+/* Typefaces
+-----------------------------------------------
+Fonts by Jos Buivenga (exljbris) -> www.exljbris.nl
+-----------------------------------------------*/
+@font-face {
+	font-family: "Museo Sans 500";
+	src: url("type/MuseoSans_500.eot");
+	src: local("Museo Sans 500"), local("MuseoSans-500"),
+		url("type/MuseoSans_500.woff") format("woff"),
+		url("type/MuseoSans_500.otf") format("opentype"),
+		url("type/MuseoSans_500.svg#MuseoSans-500") format("svg");
+	}
+@font-face {
+	font-family: "Museo Sans 500 Italic";
+	src: url("type/MuseoSans_500_Italic.eot");
+	src: local("Museo Sans 500 Italic"), local("MuseoSans-500Italic"),
+		url("type/MuseoSans_500_Italic.woff") format("woff"),
+		url("type/MuseoSans_500_Italic.otf") format("opentype"),
+		url("type/MuseoSans_500_Italic.svg#MuseoSans-500Italic") format("svg");
+	}
+@font-face {
+	font-family: "Museo 300";
+	src: url("type/Museo300-Regular.eot");
+	src: local("Museo 300"), local("Museo-300"),
+		url("type/Museo300-Regular.woff") format("woff"),
+		url("type/Museo300-Regular.otf") format("opentype"),
+		url("type/Museo300-Regular.svg#Museo-300") format("svg");
+	}
+@font-face {
+	font-family: "Museo 500";
+	src: url("type/Museo500-Regular.eot");
+	src: local("Museo 500"), local("Museo-500"),
+		url("type/Museo500-Regular.woff") format("woff"),
+		url("type/Museo500-Regular.otf") format("opentype"),
+		url("type/Museo500-Regular.svg#Museo-500") format("svg");
+	}
+@font-face {
+	font-family: "Museo 700";
+	src: url("type/Museo700-Regular.eot");
+	src: local("Museo 700"), local("Museo-700"),
+		url("type/Museo700-Regular.woff") format("woff"),
+		url("type/Museo700-Regular.otf") format("opentype"),
+		url("type/Museo700-Regular.svg#Museo-700") format("svg");
+	}
+
+
+/* General
+===============================================*/
+body {
+	margin-top: 0px;
+	background-color: #fff;
+	font: 16px/24px "Museo 300", Helvetica, Arial, sans-serif;
+	}
+h3	{
+	margin: 18px 0 6px;
+	font: normal 32px/48px "Museo 300", Helvetica, Arial, sans-serif;
+	text-align: center;
+	}
+h4	{
+	margin: 18px 0 6px;
+	font: normal 24px/48px "Museo 300", Helvetica, Arial, sans-serif;
+	color: #2b333b;
+	text-align: center;
+	text-transform: uppercase;
+	}
+h5, h6, p, ol, ul {
+	margin-bottom: 24px;
+	}
+p + h3,
+p + h4 {
+	margin-bottom: 0;
+	}
+ol { list-style: decimal; }
+ul { list-style: square; }
+
+blockquote {
+	margin: -10px 0 14px;
+	padding: 9px 0;
+	border-top: 1px #eee solid;
+	border-bottom: 1px #eee solid;
+	}
+blockquote p {
+	margin: 0;
+	text-align: center;
+	}
+code {
+	font: 15px/18px "Anonymous Pro", "Panic Sans", Monaco, monospace; 
+	}
+em {
+	font-family: "Museo Sans 500 Italic";
+	font-style: italic;
+	}
+strong.highlight {
+	font-weight: normal;
+	background-color: #ffc;
+	}
+
+
+/* Links
+-----------------------------------------------*/
+a { text-decoration: none; }
+a:link,
+a:visited {
+	color: #AD0918;
+	}
+a:hover {
+	color: #600;
+	}
+a:active { color: #fff; background-color: #000; }
+
+
+/* Comparisons
+-----------------------------------------------*/
+.m3 { font-family: "Museo 300" !important; }
+.m5 { font-family: "Museo 500" !important; }
+.m7 { font-family: "Museo 700" !important; }
+.s { font-family: "Museo Sans 500" !important; }
+.si { font-family: "Museo Sans 500 Italic" !important; font-style: italic; }
+.h { font-family: Helvetica !important; }
+.f { font-family: Futura !important; }
+.v { font-family: Verdana !important; }
+.char-compare {
+	margin-bottom: 9px !important;
+	font-size: 72px;
+	line-height: 72px;
+	color: #111;
+	}
+.char-compare .m3,
+.char-compare .m5,
+.char-compare .m7,
+.char-compare .si {
+	color: #333;
+	}
+p.caption {
+	margin: 0 0 12px;
+	font: 13px/24px "Museo 300" !important;
+	}
+
+	
+/* Header (beige stripe)
+===============================================*/
+#header {
+	padding: 9px 0 6px;
+	background-color: #edfab7;
+	text-align: center;
+	}
+h1,
+#header p {
+	display: inline;
+	margin: 9px 0 6px;
+	font-size: 13px;
+	font-weight: normal;
+	color: #b07764;
+	}
+#header a:link,
+#header a:visited {
+	color: #b07764;
+	background-color: transparent;
+	border-bottom: 1px #efd383 solid;
+	}
+#header a:hover {
+	color: #182c2a;
+	border-bottom-color: #999;
+	}
+
+
+/* Intro
+===============================================*/
+#intro {
+	padding-top: 35px;
+	border-bottom: 8px #182C2A solid;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#bfffff), color-stop(0.618, #fff));
+	}
+#intro h2 {
+	margin-top: -18px;
+	margin-bottom: -1px;
+	font: normal 135px/135px "Museo 700", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	color: rgba(7, 206, 250, 0.5); /*#07CEFA;*/
+	text-shadow: 18px 0px 0 #AD0918;
+	text-align: center;
+	}
+#intro h3 {
+	margin: 0 0 18px;
+	font: italic 42px/42px "Museo Sans 500 Italic", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #3c3809;
+	text-shadow: -5px 0px 0 #eee;
+	}
+#intro h4 {
+	margin: 0;
+	border-bottom: 1px #dfc272 solid;
+	font-weight: normal;
+	color: #182C2A;
+	}
+#intro p {
+	margin-bottom: 0px;
+	padding: 8px 10px;
+	text-align: justify;
+	background-color: #fff;
+	}
+#intro .grid_12 p {
+	margin: 0 0 3px;
+	}
+#intro .platform p {
+	background-color: #fffcea;
+	color: #3c3809;
+	border-bottom: 6px #3c3809 solid;
+	}
+#intro p.char-compare {
+	margin: 0 !important;
+	padding: 0;
+	text-align: center;
+	background-color: transparent;
+	}
+#intro .h { color: #b07764; }
+
+
+/* Signs
+===============================================*/
+#signs {
+	padding-top: 27px;
+	border-top: 12px #2c2709 dashed;
+	background: #3D380A url(../images/dirt.gif) top left repeat;
+	}
+#signs p {
+	padding: 16px 18px;
+	font: 36px/1em "Museo Sans 500", Helvetica, Arial, sans-serif;
+	background-color: #2c2709;
+	border-bottom: 2px #1b1608 solid;
+	color: #c58f4f;
+	text-shadow: 0px 2px 0 #000;
+	text-transform: uppercase;
+	}
+#signs p a {
+	background-color: transparent;
+	color: #dfc272;
+	}
+#signs p a:hover {
+	color: #fff;
+	}
+
+/* Arrows
+-----------------------------------------------*/
+#signs p.larr a,
+#signs p.darr a,
+#signs p.uarr a {
+	padding-left: 50px;
+	}
+#signs p.rarr a {
+	display: block;
+	width: 100%;
+	}
+#signs p.larr a { background: transparent url(../images/larr.png) left no-repeat; }
+#signs p.darr a { background: transparent url(../images/darr.png) left no-repeat; }
+#signs p.uarr a { background: transparent url(../images/uarr.png) left no-repeat; }
+#signs p.rarr a { background: transparent url(../images/rarr.png) right no-repeat; }
+
+
+/* Red area
+===============================================*/
+#gotosans {
+	background-color: #AD0918;
+	}
+#gotosans h3 {
+	margin: 62px 0 18px;
+	font: 48px/48px "Museo Sans 500", Helvetica, Arial, sans-serif;
+	text-align: left;
+	color: #fff;
+	}
+#gotosans p {
+	font-family: "Museo Sans 500", Helvetica, Arial, sans-serif;
+	color: #dfc272;
+	}
+#gotosans .grid_4 p {
+	font-size: 13px;
+	line-height: 18px;
+	}
+#gotosans p em {
+	font-family: "Museo Sans 500 Italic", Helvetica, Arial, sans-serif;
+	font-style: italic;
+	}
+#gotosans p.large {
+	position: relative;
+	margin: 0;
+	font: normal 480px/1em "Museo 300", Helvetica, Arial, sans-serif;
+	color: #fff;
+	}
+#gotosans p.large span.m3 {
+	position: absolute;
+	top: 0; left: 0;
+	color: #000;
+	}
+
+
+/* Examples for study
+===============================================*/
+#study {
+	border-top: 18px #182C2A solid;
+	background-color: #f6f6f6;
+	}
+#study .container_12 {
+	background-color: #fff;
+	}
+#study h3 {
+	font: 36px/48px "Museo 300", Helvetica, Arial, sans-serif;
+	text-align: left;
+	color: #3a4e4c;
+	text-transform: uppercase;
+	}
+#study h4 {
+	text-align: left;
+	}
+#study .note { color: #05acd8; }
+#study #pop {
+	font-family: "Museo 700", Helvetica, Arial, sans-serif;
+	}
+#study #looksbad {
+	font-family: "Museo 500", Helvetica, Arial, sans-serif;
+	}
+#study p {
+	font: 16px/24px "Museo 500", Helvetica, Arial, sans-serif;
+	color: #182C2A;
+	}
+#study .notes p {
+	font-family: "Museo 300", Helvetica, Arial, sans-serif;
+	}
+#study .char-compare {
+	margin: 18px 0 36px;
+	padding: 18px 0;
+	border-top: 2px #ccc solid;
+	border-bottom: 1px #ddd solid;
+	font-size: 72px;
+	line-height: 72px;
+	color: #999;
+	text-align: center;
+	}
+#study .char-compare .m3,
+#study .char-compare .m5,
+#study .char-compare .m7,
+#study .char-compare .s {
+	color: #bbb;
+	}
+#sibling-revelry {
+	padding-bottom: 24px;
+	}
+#sibling-revelry .grid_8 p.drop:first-letter {
+	display: block;
+	float: left;
+	margin: 0 10px 0 0;
+	font: 72px/72px "Museo 700", Helvetica, Arial, sans-serif;
+	color: #999;
+	}
+
+
+/* Footer
+===============================================*/
+#footer {
+	border-top: 9px #3c3809 solid;
+	color: #fff;
+	background-color: #049bc7;
+	}
+#footer h3 {
+	font: 155px/203px "Museo 700", Helvetica, Arial, sans-serif;
+	color: #fff;
+	text-shadow: 0 7px 0 #fffa18;
+	}
+#footer a:link,
+#footer a:visited {
+	color: #fffa18;
+	}
+#footer a:hover {
+	color: #ae0919;
+	background-color: #fff;
+	}
+	
+
+/* Hooray!
+-----------------------------------------------
+
+It's the bottom of the CSS file!
+
+Congratulations on being so investigative and thorough. 
+Web design needs more folks like you. Please let me know 
+if you find anything awry in these files.
+
+http://nicewebtype.com/about
+
+Tim
+
+-----------------------------------------------*/
