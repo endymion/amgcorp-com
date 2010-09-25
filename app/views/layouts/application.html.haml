@@ -9,7 +9,10 @@
     = javascript_include_tag :defaults, 'jquery-ui-1.8.5.custom.min.js'
     :javascript
       $(document).ready(function() {
-        $("#accordion").accordion();
+        $("#accordion").accordion({
+          autoHeight: false,
+          navigation: true
+        });
       });
     = csrf_meta_tag
 
