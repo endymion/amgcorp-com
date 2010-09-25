@@ -39,7 +39,7 @@ body {
   background-image: url("/images/global/background.gif");
   background-position: top center;
   background-repeat: repeat-y;
-  font-family: "Museo 500";
+  font-family: "Museo 300";
   font-style: normal;
   font-weight: normal;
   color:#ffffff;
@@ -51,12 +51,51 @@ a {
 }
 
 @font-face {
+  font-family: "Museo 300";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/Museo300-Regular.eot");
+  src: local("Museo Sans 300"), local("MuseoSans-300"),
+    url("/fonts/Museo300-Regular.otf" ) format("opentype"),
+    url("Museo300-Regular.woff") format("woff"),
+    url("fonts/Museo300-Regular.svg#Museo 300") format("svg");
+}
+
+@font-face {
   font-family: "Museo 500";
   font-style: normal;
   font-weight: normal;
   src: url("/fonts/Museo500-Regular.eot");
   src: local("Museo Sans 500"), local("MuseoSans-500"),
-    url("/fonts/Museo500-Regular.otf" ) format("opentype");
+    url("/fonts/Museo500-Regular.otf" ) format("opentype"),
+    url("Museo500-Regular.woff") format("woff"),
+    url("fonts/Museo500-Regular.svg#Museo 300") format("svg");
+}
+
+@font-face {
+  font-family: "Museo 700";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/Museo700-Regular.eot");
+  src: local("Museo Sans 700"), local("MuseoSans-700"),
+    url("/fonts/Museo700-Regular.otf" ) format("opentype"),
+    url("Museo700-Regular.woff") format("woff"),
+    url("fonts/Museo700-Regular.svg#Museo 700") format("svg");
+}
+
+h1 {
+  font-family: "Museo 700";
+  font-size:24px;
+}
+
+h2 {
+  font-family: "Museo 500";
+  font-size:24px;
+}
+
+h3 {
+  font-family: "Museo 300";
+  font-size:24px;
 }
 
 #content {
