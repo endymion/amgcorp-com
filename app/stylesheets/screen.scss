@@ -39,7 +39,7 @@ body {
   background-image: url("/images/global/background.gif");
   background-position: top center;
   background-repeat: repeat-y;
-  font-family: "Museo 500";
+  font-family: "Museo 300";
   font-style: normal;
   font-weight: normal;
   color:#ffffff;
@@ -51,12 +51,12 @@ a {
 }
 
 @font-face {
-  font-family: "Museo 500";
+  font-family: "Museo 300";
   font-style: normal;
   font-weight: normal;
-  src: url("/fonts/Museo500-Regular.eot");
+  src: url("/fonts/Museo300-Regular.eot");
   src: local("Museo Sans 500"), local("MuseoSans-500"),
-    url("/fonts/Museo500-Regular.otf" ) format("opentype");
+    url("/fonts/Museo300-Regular.otf" ) format("opentype");
 }
 
 #content {
