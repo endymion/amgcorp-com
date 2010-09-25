@@ -45,6 +45,11 @@ body {
   color:#ffffff;
 }
 
+a {
+   color:#ffffff;
+   text-decoration:none;
+}
+
 @font-face {
   font-family: "Museo 500";
   font-style: normal;
@@ -90,10 +95,5 @@ body {
    
    li:first-child {
      border:0px;
-   }
-   
-   a {
-     color:#ffffff;
-     text-decoration:none;
    }
 }
