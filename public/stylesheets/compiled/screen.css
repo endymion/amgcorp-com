@@ -509,17 +509,17 @@ body {
   background-image: url("/images/global/background.gif");
   background-position: top center;
   background-repeat: repeat-y;
-  font-family: "Museo 300";
+  font-family: "light";
   font-style: normal;
   font-weight: normal;
   color: #ffffff;
 }
 
 @font-face {
-  font-family: "Museo 300";
+  font-family: "light";
   font-style: normal;
   font-weight: normal;
-  src: url("/fonts/Museo300-Regular.eot") format("opentype");
+  src: url("/fonts/Museo300-Regular.otf") format("opentype");
 }
 
 /* line 55, ../../../app/stylesheets/screen.scss */
