@@ -526,10 +526,44 @@ a {
   font-style: normal;
   font-weight: normal;
   src: url("/fonts/Museo300-Regular.eot");
-  src: local("Museo Sans 500"), local("MuseoSans-500"), url("/fonts/Museo300-Regular.otf") format("opentype");
+  src: local("Museo Sans 300"), local("MuseoSans-300"), url("/fonts/Museo300-Regular.otf") format("opentype"), url("Museo300-Regular.woff") format("woff"), url("fonts/Museo300-Regular.svg#Museo 300") format("svg");
 }
 
-/* line 62, ../../../app/stylesheets/screen.scss */
+@font-face {
+  font-family: "Museo 500";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/Museo500-Regular.eot");
+  src: local("Museo Sans 500"), local("MuseoSans-500"), url("/fonts/Museo500-Regular.otf") format("opentype"), url("Museo500-Regular.woff") format("woff"), url("fonts/Museo500-Regular.svg#Museo 300") format("svg");
+}
+
+@font-face {
+  font-family: "Museo 700";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/Museo700-Regular.eot");
+  src: local("Museo Sans 700"), local("MuseoSans-700"), url("/fonts/Museo700-Regular.otf") format("opentype"), url("Museo700-Regular.woff") format("woff"), url("fonts/Museo700-Regular.svg#Museo 700") format("svg");
+}
+
+/* line 86, ../../../app/stylesheets/screen.scss */
+h1 {
+  font-family: "Museo 700";
+  font-size: 24px;
+}
+
+/* line 91, ../../../app/stylesheets/screen.scss */
+h2 {
+  font-family: "Museo 500";
+  font-size: 24px;
+}
+
+/* line 96, ../../../app/stylesheets/screen.scss */
+h3 {
+  font-family: "Museo 300";
+  font-size: 24px;
+}
+
+/* line 101, ../../../app/stylesheets/screen.scss */
 #content {
   background-image: url(/images/background_images/_placeholder.jpg);
   background-repeat: no-repeat;
@@ -541,7 +575,7 @@ a {
   padding: 180px 0px 50px 10px;
 }
 
-/* line 73, ../../../app/stylesheets/screen.scss */
+/* line 112, ../../../app/stylesheets/screen.scss */
 #nav {
   width: 200px;
   margin: 0px 0px 0px -220px;
@@ -550,23 +584,23 @@ a {
   left: 50%;
   top: 70px;
 }
-/* line 81, ../../../app/stylesheets/screen.scss */
+/* line 120, ../../../app/stylesheets/screen.scss */
 #nav img {
   margin: 0px 0px 15px 110px;
 }
-/* line 85, ../../../app/stylesheets/screen.scss */
+/* line 124, ../../../app/stylesheets/screen.scss */
 #nav ul {
   text-align: right;
   list-style-type: none;
   font-size: 14px;
 }
-/* line 91, ../../../app/stylesheets/screen.scss */
+/* line 130, ../../../app/stylesheets/screen.scss */
 #nav li {
   border-top: 1px dotted;
   border-color: #565757;
   padding: 15px 0px;
 }
-/* line 97, ../../../app/stylesheets/screen.scss */
+/* line 136, ../../../app/stylesheets/screen.scss */
 #nav li:first-child {
   border: 0px;
 }
