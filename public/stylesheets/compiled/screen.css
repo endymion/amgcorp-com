@@ -525,10 +525,11 @@ a {
   font-family: "Museo 500";
   font-style: normal;
   font-weight: normal;
-  src: url("/fonts/Museo500-Regular.otf") format("opentype"), url("/fonts/Museo500-Regular.eot") format("embedded-opentype");
+  src: url("/fonts/Museo500-Regular.eot");
+  src: local("Museo Sans 500"), local("MuseoSans-500"), url("/fonts/Museo500-Regular.otf") format("opentype");
 }
 
-/* line 60, ../../../app/stylesheets/screen.scss */
+/* line 62, ../../../app/stylesheets/screen.scss */
 #content {
   background-image: url(/images/background_images/_placeholder.jpg);
   background-repeat: no-repeat;
@@ -540,7 +541,7 @@ a {
   padding: 180px 0px 50px 10px;
 }
 
-/* line 71, ../../../app/stylesheets/screen.scss */
+/* line 73, ../../../app/stylesheets/screen.scss */
 #nav {
   width: 200px;
   margin: 0px 0px 0px -220px;
@@ -549,23 +550,23 @@ a {
   left: 50%;
   top: 70px;
 }
-/* line 79, ../../../app/stylesheets/screen.scss */
+/* line 81, ../../../app/stylesheets/screen.scss */
 #nav img {
   margin: 0px 0px 15px 110px;
 }
-/* line 83, ../../../app/stylesheets/screen.scss */
+/* line 85, ../../../app/stylesheets/screen.scss */
 #nav ul {
   text-align: right;
   list-style-type: none;
   font-size: 14px;
 }
-/* line 89, ../../../app/stylesheets/screen.scss */
+/* line 91, ../../../app/stylesheets/screen.scss */
 #nav li {
   border-top: 1px dotted;
   border-color: #565757;
   padding: 15px 0px;
 }
-/* line 95, ../../../app/stylesheets/screen.scss */
+/* line 97, ../../../app/stylesheets/screen.scss */
 #nav li:first-child {
   border: 0px;
 }

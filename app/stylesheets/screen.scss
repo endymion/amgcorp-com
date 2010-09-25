@@ -54,7 +54,9 @@ a {
   font-family: "Museo 500";
   font-style: normal;
   font-weight: normal;
-  src: url("/fonts/Museo500-Regular.otf" ) format("opentype"), url("/fonts/Museo500-Regular.eot") format("embedded-opentype");
+  src: url("/fonts/Museo500-Regular.eot");
+  src: local("Museo Sans 500"), local("MuseoSans-500"),
+    url("/fonts/Museo500-Regular.otf" ) format("opentype");
 }
 
 #content {
