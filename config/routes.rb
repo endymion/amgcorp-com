@@ -1,7 +1,4 @@
 AmgcorpCom::Application.routes.draw do
-  resources :profiles
-
-  resources :press_releases
 
   root :to => 'root#about_us'
 
@@ -11,14 +8,20 @@ AmgcorpCom::Application.routes.draw do
   # work just fine, because we know that some of these will become full resources
   # later and we want to use the resource_path names in links in the app from
   # the beginning.
-  match 'about_us' => 'root#about_us'
-  match 'profiles' => 'root#profiles'
-  match 'owned_venues' => 'root#owned_venues'
-  match 'operated_venues' => 'root#operated_venues'
-  match 'client_venues' => 'root#client_venues'
-  match 'services' => 'root#services'
-  match 'contact' => 'root#contact'
-  match 'press' => 'root#press'
+  match 'about_us' => 'root#about_us', :as => :public_about_us
+  match 'profiles' => 'root#profiles', :as => :public_profiles
+  match 'owned_venues' => 'root#owned_venues', :as => :public_owned_venues
+  match 'operated_venues' => 'root#operated_venues', :as => :public_operated_venues
+  match 'client_venues' => 'root#client_venues', :as => :public_client_venues
+  match 'services' => 'root#services', :as => :public_services
+  match 'contact' => 'root#contact', :as => :public_contact
+  match 'press' => 'root#press', :as => :public_press
+
+  namespace :admin do
+    resources :profiles
+
+    resources :press_releases
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
