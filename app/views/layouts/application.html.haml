@@ -10,11 +10,15 @@
     :javascript
       $(document).ready(function() {
         $("#accordion").accordion({
+          collapsible: true,
           autoHeight: false,
-          navigation: true
+          active: false
         });
       });
     = csrf_meta_tag
+    
+  %div#content
+    = yield
 
   %div#nav
     %img{:src => "/images/global/amglogo.png", :width => "207", :height => "67px" }
@@ -35,6 +39,3 @@
         = link_to 'Contact', contact_path
       %li
         = link_to 'Press', press_path
-
-  %div#content
-    = yield
