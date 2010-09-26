@@ -42,6 +42,7 @@ body {
   font-family: "Museo 300";
   font-style: normal;
   font-weight: normal;
+  font-size:14px;
   color:#ffffff;
 }
 
@@ -90,7 +91,7 @@ h1 {
 
 h2 {
   font-family: "Museo 500";
-  font-size:24px;
+  font-size:28px;
 }
 
 h3 {
@@ -134,6 +135,20 @@ h3 {
    }
    
    li:first-child {
-     border:0px;
+     border: 0px;
    }
+}
+
+.container {
+  width: 485px;
+  padding:15px 15px 15px 15px;
+  margin:0px 0px 10px 0px;
+  border-top:1px dotted;
+  border-bottom:1px dotted;
+  border-color:#ffffff;
+  background-image: url("/images/global/container_bg.png");
+  
+  p {
+    margin:0px 0px 15px 0px;
+  }
 }
