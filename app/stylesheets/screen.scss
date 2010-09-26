@@ -92,32 +92,29 @@ a {
 }
 
 h1 {
+  width: 490px;
   font-family: "Museo 700";
   font-size:28px;
   text-shadow: #000000 -2px 2px 2px;
-  filter: Shadow(Color=#666666, 	
-  			Direction=135, 
-  			Strength=5);
+  <!--[if IE]>display: block; width: 100%; filter: glow(color=#0000ff,strength=3);<![endif]-->
   
 }
 
 h2 {
+  width: 450px;
   font-family: "Museo 500";
   font-size:20px;
   text-shadow: #000000 -2px 2px 2px;
-  filter: Shadow(Color=#666666, 	
-  			Direction=135, 
-  			Strength=5);
+  <!--[if IE]>display: block; width: 100%; filter: glow(color=#0000ff,strength=3);<![endif]-->
   
 }
 
 h3 {
+  width: 450px;
   font-family: "Museo 300";
   font-size:14px;
   text-shadow: #000000 -2px 2px 2px;
-  filter: Shadow(Color=#666666, 	
-  			Direction=135, 
-  			Strength=5);
+  <!--[if IE]>display: block; width: 100%; filter: glow(color=#0000ff,strength=3);<![endif]-->
   
 }
 
