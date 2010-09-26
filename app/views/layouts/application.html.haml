@@ -10,11 +10,15 @@
     :javascript
       $(document).ready(function() {
         $("#accordion").accordion({
+          collapsible: true,
           autoHeight: false,
-          navigation: true
+          active: false
         });
       });
     = csrf_meta_tag
+    
+
+    = yield
 
   %div#nav
     %img{:src => "/images/global/amglogo.png", :width => "207", :height => "67px" }
@@ -28,13 +32,8 @@
       %li
         = link_to 'Operated Venues', operated_venues_path
       %li
-        = link_to 'Partner Venues', partner_venues_path
-      %li
-        = link_to 'Services', services_path
+        = link_to 'Client Venues', client_venues_path
       %li
         = link_to 'Contact', contact_path
       %li
         = link_to 'Press', press_path
-
-  %div#content
-    = yield

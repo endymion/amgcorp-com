@@ -503,7 +503,7 @@ form.bp textarea {
   height: 250px;
 }
 
-/* line 37, ../../../app/stylesheets/screen.scss */
+/* line 42, ../../../app/stylesheets/screen.scss */
 body {
   background-color: #555555;
   background-image: url("/images/global/background.gif");
@@ -512,10 +512,13 @@ body {
   font-family: "Museo 300";
   font-style: normal;
   font-weight: normal;
+  font-size: 14px;
   color: #ffffff;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
-/* line 48, ../../../app/stylesheets/screen.scss */
+/* line 56, ../../../app/stylesheets/screen.scss */
 a {
   color: #ffffff;
   text-decoration: none;
@@ -545,62 +548,146 @@ a {
   src: local("Museo Sans 700"), local("MuseoSans-700"), url("/fonts/Museo700-Regular.otf") format("opentype"), url("Museo700-Regular.woff") format("woff"), url("fonts/Museo700-Regular.svg#Museo 700") format("svg");
 }
 
-/* line 86, ../../../app/stylesheets/screen.scss */
+/* line 94, ../../../app/stylesheets/screen.scss */
 h1 {
-  font-family: "Museo 700";
-  font-size: 24px;
+  width: 450px;
+  font-family: "Museo 300";
+  font-size: 35px;
+  text-shadow: black -2px 2px 2px;
+  margin: 0px 0px 10px 0px;
 }
 
-/* line 91, ../../../app/stylesheets/screen.scss */
+/* line 103, ../../../app/stylesheets/screen.scss */
 h2 {
   font-family: "Museo 500";
-  font-size: 24px;
+  font-size: 28px;
+  text-shadow: black -2px 2px 2px;
 }
 
-/* line 96, ../../../app/stylesheets/screen.scss */
+/* line 110, ../../../app/stylesheets/screen.scss */
 h3 {
-  font-family: "Museo 300";
-  font-size: 24px;
+  font-family: "Museo 500";
+  font-size: 20px;
+  text-shadow: black -2px 2px 2px;
 }
 
-/* line 101, ../../../app/stylesheets/screen.scss */
+/* line 117, ../../../app/stylesheets/screen.scss */
 #content {
   background-image: url(/images/background_images/_placeholder.jpg);
   background-repeat: no-repeat;
+  background-color: #000000;
   min-height: 1000px;
   width: 100%;
   position: absolute;
   left: 50%;
   top: 0px;
-  padding: 180px 0px 50px 10px;
+  margin: 0px 0px 0px -200px;
+  padding: 138px 0px 50px 10px;
 }
 
-/* line 112, ../../../app/stylesheets/screen.scss */
+/* line 130, ../../../app/stylesheets/screen.scss */
+#content_contact {
+  background-image: url(/images/background_images/contact.jpg);
+  background-repeat: no-repeat;
+  background-color: #000000;
+  min-height: 1000px;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  margin: 0px 0px 0px -200px;
+  padding: 138px 0px 50px 10px;
+}
+
+/* line 143, ../../../app/stylesheets/screen.scss */
 #nav {
   width: 200px;
-  margin: 0px 0px 0px -220px;
+  margin: 0px 0px 0px -420px;
   padding: 10px;
   position: absolute;
   left: 50%;
-  top: 70px;
+  top: 30px;
 }
-/* line 120, ../../../app/stylesheets/screen.scss */
+/* line 151, ../../../app/stylesheets/screen.scss */
 #nav img {
   margin: 0px 0px 15px 110px;
 }
-/* line 124, ../../../app/stylesheets/screen.scss */
+/* line 155, ../../../app/stylesheets/screen.scss */
 #nav ul {
   text-align: right;
   list-style-type: none;
   font-size: 14px;
 }
-/* line 130, ../../../app/stylesheets/screen.scss */
+/* line 161, ../../../app/stylesheets/screen.scss */
 #nav li {
   border-top: 1px dotted;
-  border-color: #565757;
+  border-color: #777777;
   padding: 15px 0px;
 }
-/* line 136, ../../../app/stylesheets/screen.scss */
+/* line 167, ../../../app/stylesheets/screen.scss */
 #nav li:first-child {
   border: 0px;
+}
+
+/* line 172, ../../../app/stylesheets/screen.scss */
+.container {
+  width: 450px;
+  padding: 15px;
+  margin: 0px 0px 10px 0px;
+  border-top: 1px dotted;
+  border-bottom: 1px dotted;
+  border-color: #ffffff;
+  background-image: url("/images/global/container_bg.png");
+}
+/* line 181, ../../../app/stylesheets/screen.scss */
+.container p {
+  margin: 0px 0px 10px 0px;
+}
+/* line 185, ../../../app/stylesheets/screen.scss */
+.container img {
+  margin: 0px 0px 15px 0px;
+}
+/* line 189, ../../../app/stylesheets/screen.scss */
+.container a {
+  font-family: "Museo 700";
+  color: #00d2ff;
+}
+
+/* line 202, ../../../app/stylesheets/screen.scss */
+.press_item {
+  width: 500px;
+  padding: 20px;
+  margin: 0px 0px 10px 0px;
+  border-top: 1px dotted;
+  border-bottom: 1px dotted;
+  border-color: #ffffff;
+  background-image: url("/images/global/container_bg.png");
+}
+/* line 211, ../../../app/stylesheets/screen.scss */
+.press_item dl {
+  float: left;
+  width: 270px;
+  margin: 0px 15px 0px 0px;
+}
+/* line 217, ../../../app/stylesheets/screen.scss */
+.press_item dt {
+  font-family: "Museo 700";
+  font-size: 15px;
+}
+/* line 222, ../../../app/stylesheets/screen.scss */
+.press_item dl {
+  font-family: "Museo 500";
+  font-size: 12px;
+}
+/* line 227, ../../../app/stylesheets/screen.scss */
+.press_item .thumbnail_box {
+  float: left;
+  padding: 0px 20px 0px 0px;
+  margin: 0px 20px 0px 0px;
+  border-right: 1px dotted;
+  border-color: #ffffff;
+}
+/* line 235, ../../../app/stylesheets/screen.scss */
+.press_item .pdf {
+  float: right;
 }

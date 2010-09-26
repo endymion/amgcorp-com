@@ -30,9 +30,14 @@ body.bp {
 
 form.bp {
   @include blueprint-form; }
+  
+// DYNAMIC STYLES  \==========================================================
 
 
-// Added by Appleseed to make the default sections more visible.  You should probably remove this.
+
+
+
+// GLOBAL STYLES  \==========================================================
 
 body {
   background-color: #555555;
@@ -42,7 +47,10 @@ body {
   font-family: "Museo 300";
   font-style: normal;
   font-weight: normal;
+  font-size:14px;
   color:#ffffff;
+  overflow-x:hidden; 
+  overflow-y:auto;
 }
 
 a {
@@ -84,38 +92,61 @@ a {
 }
 
 h1 {
-  font-family: "Museo 700";
-  font-size:24px;
+  width:450px;
+  font-family: "Museo 300";
+  font-size:35px;
+  text-shadow: #000000 -2px 2px 2px;
+  margin: 0px 0px 10px 0px;
+  
 }
 
 h2 {
   font-family: "Museo 500";
-  font-size:24px;
+  font-size:28px;
+  text-shadow: #000000 -2px 2px 2px;
+  
 }
 
 h3 {
-  font-family: "Museo 300";
-  font-size:24px;
+  font-family: "Museo 500";
+  font-size:20px;
+  text-shadow: #000000 -2px 2px 2px;
+  
 }
 
 #content {
   background-image: url(/images/background_images/_placeholder.jpg);
   background-repeat: no-repeat;
+  background-color:#000000;
   min-height: 1000px;
   width: 100%;
   position: absolute;
   left: 50%;
   top: 0px;
-  padding:180px 0px 50px 10px;
+  margin: 0px 0px 0px -200px;
+  padding:138px 0px 50px 10px;
+}
+
+#content_contact {
+  background-image: url(/images/background_images/contact.jpg);
+  background-repeat: no-repeat;
+  background-color:#000000;
+  min-height: 1000px;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  margin: 0px 0px 0px -200px;
+  padding:138px 0px 50px 10px;
 }
 
 #nav {
   width:200px;
-  margin: 0px 0px 0px -220px;
+  margin: 0px 0px 0px -420px;
   padding:10px;
   position:absolute;
   left:50%;
-  top:70px;
+  top:30px;
    
    img{
      margin:0px 0px 15px 110px;
@@ -129,11 +160,80 @@ h3 {
    
    li{
      border-top:1px dotted;
-     border-color:#565757;
+     border-color:#777777;
      padding: 15px 0px;
    }
    
    li:first-child {
-     border:0px;
+     border: 0px;
    }
+}
+
+.container {
+  width: 450px;
+  padding:15px;
+  margin:0px 0px 10px 0px;
+  border-top:1px dotted;
+  border-bottom:1px dotted;
+  border-color:#ffffff;
+  background-image: url("/images/global/container_bg.png");
+  
+  p {
+    margin:0px 0px 10px 0px;
+  }
+  
+  img {
+    margin:0px 0px 15px 0px;
+  }
+  
+  a{
+    font-family:"Museo 700";
+    color:#00d2ff;
+  }
+}
+
+
+
+
+
+
+// PRESS STYLES\\==========================================
+
+.press_item {
+  width: 500px;
+  padding:20px;
+  margin:0px 0px 10px 0px;
+  border-top:1px dotted;
+  border-bottom:1px dotted;
+  border-color:#ffffff;
+  background-image: url("/images/global/container_bg.png");
+  
+  dl {
+    float:left;
+    width:270px;
+    margin:0px 15px 0px 0px;
+  }
+  
+  dt {
+    font-family: "Museo 700";
+    font-size:15px;
+  }
+  
+  dl {
+    font-family: "Museo 500";
+    font-size:12px;
+  }
+  
+  .thumbnail_box {
+    float:left;
+    padding: 0px 20px 0px 0px;
+    margin: 0px 20px 0px 0px;
+    border-right:1px dotted;
+    border-color:#ffffff;
+  }
+  
+  .pdf {
+    float:right;
+  }
+  
 }
