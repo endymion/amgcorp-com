@@ -11,7 +11,7 @@ AmgcorpCom::Application.routes.draw do
   match 'profiles' => 'root#profiles'
   match 'owned_venues' => 'root#owned_venues'
   match 'operated_venues' => 'root#operated_venues'
-  match 'partner_venues' => 'root#partner_venues'
+  match 'client_venues' => 'root#client_venues'
   match 'services' => 'root#services'
   match 'contact' => 'root#contact'
   match 'press' => 'root#press'

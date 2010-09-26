@@ -93,10 +93,10 @@ a {
 
 h1 {
   width: 490px;
-  font-family: "Museo 700";
-  font-size:28px;
+  font-family: "Museo 300";
+  font-size:35px;
   text-shadow: #000000 -2px 2px 2px;
-  <!--[if IE]>display: block; width: 100%; filter: glow(color=#0000ff,strength=3);<![endif]-->
+  margin: 0px 0px 10px 0px;
   
 }
 
@@ -105,16 +105,14 @@ h2 {
   font-family: "Museo 500";
   font-size:20px;
   text-shadow: #000000 -2px 2px 2px;
-  <!--[if IE]>display: block; width: 100%; filter: glow(color=#0000ff,strength=3);<![endif]-->
   
 }
 
 h3 {
   width: 450px;
-  font-family: "Museo 300";
+  font-family: "Museo 500";
   font-size:14px;
   text-shadow: #000000 -2px 2px 2px;
-  <!--[if IE]>display: block; width: 100%; filter: glow(color=#0000ff,strength=3);<![endif]-->
   
 }
 
