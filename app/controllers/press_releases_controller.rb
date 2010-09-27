@@ -15,12 +15,7 @@ class PressReleasesController < ApplicationController
   # GET /press_releases/1
   # GET /press_releases/1.xml
   def show
-    @press_release = PressRelease.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @press_release }
-    end
+    redirect_to :action => :index
   end
 
   # GET /press_releases/new

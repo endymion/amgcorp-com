@@ -1,18 +1,43 @@
-%h1= t('.title')
-%p= link_to t('.new_press_release'), new_press_release_path
+%div#content_contact
+  %h2
+    Press
 
-%table
-  %thead
-    %tr
-      %th= PressRelease.human_attribute_name :title
-      %th= PressRelease.human_attribute_name :body
-      %th{:colspan => 3}= t 'actions'
-  
-  %tbody
+  - if session[:admin]
+    %p= link_to t('.new_press_release'), new_press_release_path
     - for press_release in @press_releases
-      %tr{ :class => cycle(:odd, :even) }
-        %td= press_release.title
-        %td= press_release.body
-        %td.action= link_to t('show'), press_release
-        %td.action= link_to t('edit'), edit_press_release_path(press_release)
-        %td.action= link_to t('destroy'), press_release, :confirm => t('are_you_sure'), :method => :delete
+      %div.press_item
+        %table.press_item_table
+          %tr
+            %td{:valign => "top"}
+              %div.thumbnail_box
+                %img{:src => "/images/_temp/press_tn.png", :width => "100px", :height => "61px" }
+            %td{:valign => "top"}
+              %dl
+                %dt
+                  = press_release.title
+                %dd
+                  = press_release.body
+            %td{:valign => "top"}
+              %a{:href => "#"}
+                %img.pdf{:src => "/images/page_press/pdf_icon.png", :width => "72px", :height => "63px" }
+        = link_to t('edit'), edit_press_release_path(press_release)
+        = link_to t('destroy'), press_release, :confirm => t('are_you_sure'), :method => :delete
+
+  - else
+
+    - for press_release in @press_releases
+      %div.press_item
+        %table.press_item_table
+          %tr
+            %td{:valign => "top"}
+              %div.thumbnail_box
+                %img{:src => "/images/_temp/press_tn.png", :width => "100px", :height => "61px" }
+            %td{:valign => "top"}
+              %dl
+                %dt
+                  = press_release.title
+                %dd
+                  = press_release.body
+            %td{:valign => "top"}
+              %a{:href => "#"}
+                %img.pdf{:src => "/images/page_press/pdf_icon.png", :width => "72px", :height => "63px" }

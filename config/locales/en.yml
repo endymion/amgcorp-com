@@ -13,3 +13,6 @@ en:
       new_profile: 'new profile'
     new:
       title: 'New Profile'
+  press_releases:
+    index:
+      new_press_release: 'new press release'

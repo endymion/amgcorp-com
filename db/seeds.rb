@@ -73,3 +73,14 @@ Cordova joined Angel Management Group in 2008, and immediately set about improvi
 As Vice President of Marketing at Angel Management Group, Cordova is responsible for overseeing the marketing, promotions and VIP services for the entire company portfolio.
 EOP
 )
+
+
+PressRelease.create(
+  :title => 'AMG Buys Pure Management',
+  :body => "AMG's team of VIP Hosts and VIP Marketing professionals have been hand picked from the finest companies in Las Vegas."
+)
+
+PressRelease.create(
+  :title => 'AMG Buys Pure Management (really!)',
+  :body => "AMG's badass team of VIP Hosts and VIP Marketing professionals have been hand picked from the finest companies in Las Vegas."
+)
