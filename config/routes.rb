@@ -14,11 +14,6 @@ AmgcorpCom::Application.routes.draw do
   match 'contact' => 'root#contact', :as => :public_contact
   match 'press' => 'root#press', :as => :public_press
 
-  namespace :admin do
-    resources :profiles
-    resources :press_releases
-  end
-
   resources :press_releases
   resources :profiles
 
