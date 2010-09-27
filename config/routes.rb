@@ -18,4 +18,8 @@ AmgcorpCom::Application.routes.draw do
     resources :profiles
     resources :press_releases
   end
+
+  resources :press_releases
+  resources :profiles
+
 end
