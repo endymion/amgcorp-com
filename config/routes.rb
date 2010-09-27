@@ -8,7 +8,7 @@ AmgcorpCom::Application.routes.draw do
   # work just fine, because we know that some of these will become full resources
   # later and we want to use the resource_path names in links in the app from
   # the beginning.
-  match 'home' => 'root#home', :as => :public_about_us
+  match 'home' => 'root#home', :as => :public_home
   match 'about_us' => 'root#about_us', :as => :public_about_us
   match 'profiles' => 'root#profiles', :as => :public_profiles
   match 'owned_venues' => 'root#owned_venues', :as => :public_owned_venues
