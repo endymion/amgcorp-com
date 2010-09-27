@@ -34,7 +34,11 @@ form.bp {
 // DYNAMIC STYLES  \==========================================================
 
 
+// PNG fix for IE
 
+img, div {
+  behavior: url("/pngfix/iepngfix.htc");
+}
 
 
 // GLOBAL STYLES  \==========================================================
