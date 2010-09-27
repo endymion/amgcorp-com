@@ -18,7 +18,7 @@
                 %dd
                   = press_release.body
             %td{:valign => "top"}
-              %a{:href => "#"}
+              %a{:href => press_release.pdf.url }
                 %img.pdf{:src => "/images/page_press/pdf_icon.png", :width => "72px", :height => "63px" }
         = link_to t('edit'), edit_press_release_path(press_release)
         = link_to t('destroy'), press_release, :confirm => t('are_you_sure'), :method => :delete
@@ -39,5 +39,5 @@
                 %dd
                   = press_release.body
             %td{:valign => "top"}
-              %a{:href => "#"}
+              %a{:href => press_release.pdf.url }
                 %img.pdf{:src => "/images/page_press/pdf_icon.png", :width => "72px", :height => "63px" }

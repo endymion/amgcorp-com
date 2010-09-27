@@ -24,6 +24,7 @@ gem 'ruby-debug', "= 0.10.0"
 
 gem 'RedCloth'
 gem 'paperclip'
+gem 'aws-s3', :require => 'aws/s3'
 
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators

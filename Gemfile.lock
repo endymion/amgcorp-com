@@ -31,6 +31,10 @@ GEM
     activesupport (3.0.0)
     arel (1.0.1)
       activesupport (~> 3.0.0)
+    aws-s3 (0.6.2)
+      builder
+      mime-types
+      xml-simple
     builder (2.1.2)
     capybara (0.3.9)
       culerity (>= 0.2.4)
@@ -72,6 +76,9 @@ GEM
       treetop (>= 1.4.5)
     mime-types (1.16)
     nokogiri (1.4.3.1)
+    paperclip (2.3.3)
+      activerecord
+      activesupport
     polyglot (0.3.1)
     rack (1.2.1)
     rack-mount (0.6.13)
@@ -119,12 +126,14 @@ GEM
       polyglot (>= 0.3.1)
     trollop (1.16.2)
     tzinfo (0.3.23)
+    xml-simple (1.0.12)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   RedCloth
+  aws-s3
   capybara
   compass
   cucumber
@@ -132,6 +141,7 @@ DEPENDENCIES
   factory_girl
   haml
   jquery-rails
+  paperclip
   rails (= 3.0.0)
   rspec-rails (>= 2.0.0.beta.17)
   ruby-debug (= 0.10.0)

@@ -1,4 +1,4 @@
-= form_for(@press_release) do |f|
+= form_for(@press_release, :html => {:multipart => true}) do |f|
   - if @press_release.errors.any?
     #errorExplanation
       %h2= "#{pluralize(@press_release.errors.count, 'error')} prohibited this user from being saved:"
@@ -10,10 +10,27 @@
     = f.label :title
     %br
     = f.text_field :title
+  %br
   .field
     = f.label :body
     %br
     = f.text_area :body
+  %br
+  .field
+    = f.label :image
+    %br
+    = f.file_field :image
+    - unless @press_release.image_file_name.nil?
+      = image_tag @press_release.image.url
+  %br
+  .field
+    = f.label :pdf
+    %br
+    = f.file_field :pdf
+    - unless @press_release.pdf_file_name.nil?
+      %a{:href => @press_release.pdf.url }
+        %img.pdf{:src => "/images/page_press/pdf_icon.png", :width => "72px", :height => "63px" }
 
+  %br
   .actions
     = f.submit
