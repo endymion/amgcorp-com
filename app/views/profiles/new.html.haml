@@ -1,3 +1,4 @@
-%h1= t '.title'
-%p= link_to t('back'), profiles_path
-= render 'form'
+%div#content_contact
+  %h1= t '.title'
+  = render 'form'
+  %p= link_to t('cancel'), profiles_path

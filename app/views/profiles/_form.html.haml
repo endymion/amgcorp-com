@@ -11,21 +11,9 @@
     %br
     = f.text_field :name
   .field
-    = f.label :title
-    %br
-    = f.text_field :title
-  .field
-    = f.label :subtitle
-    %br
-    = f.text_field :subtitle
-  .field
-    = f.label :in_the_business_since
-    %br
-    = f.date_select :in_the_business_since
-  .field
     = f.label :body
     %br
-    = f.text_field :body
+    = f.text_area :body
 
   .actions
     = f.submit

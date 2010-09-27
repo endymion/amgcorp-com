@@ -1,4 +1,6 @@
 class PressReleasesController < ApplicationController
+  before_filter :authenticate
+  
   # GET /press_releases
   # GET /press_releases.xml
   def index

@@ -7,7 +7,12 @@
     /[if lt IE 8]
       = stylesheet_link_tag 'compiled/ie.css', :media => 'screen, projection'
     = javascript_include_tag :defaults, 'iepngfix_tilebg.js'
-    = javascript_include_tag :defaults, 'jquery-ui-1.8.5.custom.min.js'
+    - if session[:admin] and !action_name.eql? 'public'
+      = javascript_include_tag :defaults, 'jquery-ui-1.8.5.full.min.js'
+      / = stylesheet_link_tag 'scaffold.css', :media => 'screen, projection'
+      / = stylesheet_link_tag 'jquery-ui.css', :media => 'screen, projection'
+    - else
+      = javascript_include_tag :defaults, 'jquery-ui-1.8.5.custom.min.js'
     :javascript
       $(document).ready(function() {
         $("#accordion").accordion({
@@ -28,7 +33,7 @@
       %li
         = link_to 'About Us', public_about_us_path
       %li
-        = link_to 'Profiles', public_profiles_path
+        = link_to 'Profiles', profiles_path
       %li
         = link_to 'Owned Venues', public_owned_venues_path
       %li
@@ -39,3 +44,6 @@
         = link_to 'Contact', public_contact_path
       %li
         = link_to 'Press', public_press_path
+      - if session[:admin]
+        %li
+          = link_to 'Sign Out', sign_out_path

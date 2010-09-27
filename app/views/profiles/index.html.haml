@@ -1,24 +1,22 @@
-%h1= t('.title')
-%p= link_to t('.new_profile'), new_profile_path
-
-%table
-  %thead
-    %tr
-      %th= Profile.human_attribute_name :name
-      %th= Profile.human_attribute_name :title
-      %th= Profile.human_attribute_name :subtitle
-      %th= Profile.human_attribute_name :in_the_business_since
-      %th= Profile.human_attribute_name :body
-      %th{:colspan => 3}= t 'actions'
+%div#content_aboutus
   
-  %tbody
-    - for profile in @profiles
-      %tr{ :class => cycle(:odd, :even) }
-        %td= profile.name
-        %td= profile.title
-        %td= profile.subtitle
-        %td= profile.in_the_business_since
-        %td= profile.body
-        %td.action= link_to t('show'), profile
-        %td.action= link_to t('edit'), edit_profile_path(profile)
-        %td.action= link_to t('destroy'), profile, :confirm => t('are_you_sure'), :method => :delete
+  - if session[:admin]
+    %p= link_to t('.new_profile'), new_profile_path
+    %div#accordion
+      - for profile in @profiles
+        %h2
+          %a{:href => "##{profile.name.gsub(/\W/,'_')}"}
+            = profile.name
+        %div.container
+          != RedCloth.new(profile.body).to_html
+          = link_to t('edit'), edit_profile_path(profile)
+          = link_to t('destroy'), profile, :confirm => t('are_you_sure'), :method => :delete
+
+  - else
+    %div#accordion
+      - for profile in @profiles
+        %h2
+          %a{:href => "##{profile.name.gsub(/\W/,'_')}"}
+            = profile.name
+        %div.container
+          != RedCloth.new(profile.body).to_html        

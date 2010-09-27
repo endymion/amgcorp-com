@@ -14,13 +14,15 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 # gem 'capistrano'
 
 # To use debugger
-# gem 'ruby-debug'
+gem 'ruby-debug', "= 0.10.0"
 
 # Bundle the extra gems:
 # gem 'bj'
 # gem 'nokogiri'
 # gem 'sqlite3-ruby', :require => 'sqlite3'
 # gem 'aws-s3', :require => 'aws/s3'
+
+gem 'RedCloth'
 
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators

@@ -1,4 +1,6 @@
 class ProfilesController < ApplicationController
+  before_filter :authenticate
+
   # GET /profiles
   # GET /profiles.xml
   def index
@@ -13,12 +15,7 @@ class ProfilesController < ApplicationController
   # GET /profiles/1
   # GET /profiles/1.xml
   def show
-    @profile = Profile.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @profile }
-    end
+    redirect_to :action => :index
   end
 
   # GET /profiles/new

@@ -2,4 +2,14 @@
 # See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  back: back
+  cancel: cancel
+  show: show
+  edit: edit
+  destroy: destroy
+  are_you_sure: 'are you sure?'
+  profiles:
+    index:
+      new_profile: 'new profile'
+    new:
+      title: 'New Profile'
