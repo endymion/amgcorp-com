@@ -1,13 +1,14 @@
 AmgcorpCom::Application.routes.draw do
 
-  root :to => 'root#about_us'
+  root :to => 'root#home'
 
-  get "root/about_us"
+  get "root/home"
 
   # These are set up as individual named routes when a single catchall would
   # work just fine, because we know that some of these will become full resources
   # later and we want to use the resource_path names in links in the app from
   # the beginning.
+  match 'home' => 'root#home', :as => :public_about_us
   match 'about_us' => 'root#about_us', :as => :public_about_us
   match 'profiles' => 'root#profiles', :as => :public_profiles
   match 'owned_venues' => 'root#owned_venues', :as => :public_owned_venues
