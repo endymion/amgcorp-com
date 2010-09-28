@@ -24,6 +24,23 @@ EOP
 )
 
 Profile.create(
+  :name => 'Alex Cordova',
+  :body => <<EOP
+With twelve years of proprietor experience in nightclubs stretching from New York City to Las Vegas, Alex Cordova has an extensive knowledge of the nightlife industry, encompassing party planning and promotions as well as management and marketing.
+
+Cordova was educated at Williams College, after which he embarked on an impressive promotional career with many of New York’s hottest nightclubs. Over the last twelve years, Alex has positioned himself as arguably one of the most powerful promoters and event producers in the country. In New York and Las Vegas, Alex has worked with such prestigious brands as Cheetah, Eugenes, Float, Lot 61, and Pangaea through his wholly-owned company known as CliQue Entertainment. CliQue Entertainment was established as a lifestyle marketing company that specialized in event planning and nightclub consultation. During his tenure with CliQue Entertainment he handled successful events at more than twenty of New York City's top nightclubs, as well as serving as an ongoing marketing consultant for various top venues.
+
+In 2003, Cordova brought CliQue Entertainment to Las Vegas where he was hired by Park Place Entertainment (Caesar’s Entertainment) to handle the marketing for their failing outlet “Risque” in the Paris Hotel and Casino.  After a year under his stewardship, the venue was ranked ‘best nightclub of 2003’ by the Las Vegas Review Journal.
+
+In 2004, Cordova was retained by MGM Grand to produce a weekly event at Las Vegas’ most prestigious Ultra Lounge, “Tabu.” In 2004, he was responsible for the revival of Mandalay Bay Group's “Moorea Beach” ultra lounge in late 2004, Mr. Cordova was hired by Pure Management Group to spearhead the marketing and promotions for Pure Nightclub. In 2006, Pure was ranked the #1 “Hippest Hotspot” in the World by E! Entertainment, and Cordova was part of a team that drove $51m in revenue during that year, with PMG as a whole grossing over $110m.  In the nightclub industry Mr. Cordova is generally recognized as the key player to Pure’s immense success over the past years.
+
+Cordova joined Angel Management Group in 2008, and immediately set about improving programming and operations at Wet Republic at MGM Grand. He was instrumental in developing the pool’s reputation for being the place in Las Vegas for A-list celebrities, performers and athletes, and after less than a year under his leadership, the venue saw gross revenues more than double—from $5 million in 2008 to more than $13 million in 2009.
+
+As Vice President of Marketing at Angel Management Group, Cordova is responsible for overseeing the marketing, promotions and VIP services for the entire company portfolio.
+EOP
+)
+
+Profile.create(
   :name => 'Derek Silberstein',
   :body => <<EOP
 After more than 15 years of experience in the food, beverage and nightlife industry, Derek Silberstein knows his business—and has the track record to prove it.
@@ -60,19 +77,42 @@ EOP
 )
 
 Profile.create(
-  :name => 'Alex Cordova',
+  :name => 'Omar Gutierrez',
   :body => <<EOP
-With twelve years of proprietor experience in nightclubs stretching from New York City to Las Vegas, Alex Cordova has an extensive knowledge of the nightlife industry, encompassing party planning and promotions as well as management and marketing.
+Born and raised in Las Vegas, Omar Gutierrez has spent his entire career in the hospitality industry. He has worked with the world’s best chefs and restaurateurs, managed world-class restaurants and operated one of the city’s largest food and beverage operations.
 
-Cordova was educated at Williams College, after which he embarked on an impressive promotional career with many of New York’s hottest nightclubs. Over the last twelve years, Alex has positioned himself as arguably one of the most powerful promoters and event producers in the country. In New York and Las Vegas, Alex has worked with such prestigious brands as Cheetah, Eugenes, Float, Lot 61, and Pangaea through his wholly-owned company known as CliQue Entertainment. CliQue Entertainment was established as a lifestyle marketing company that specialized in event planning and nightclub consultation. During his tenure with CliQue Entertainment he handled successful events at more than twenty of New York City's top nightclubs, as well as serving as an ongoing marketing consultant for various top venues.
+Gutierrez started his career at the Rio Hotel and Casino where he was part of the team that brought Las Vegas its first casino nightclub, first luxury rooftop lounge and the restaurant that legitimized Las Vegas as a dining destination.
 
-In 2003, Cordova brought CliQue Entertainment to Las Vegas where he was hired by Park Place Entertainment (Caesar’s Entertainment) to handle the marketing for their failing outlet “Risque” in the Paris Hotel and Casino.  After a year under his stewardship, the venue was ranked ‘best nightclub of 2003’ by the Las Vegas Review Journal.
+His success overseeing food and beverage operations at the hotel’s Rio Secco led to his role as General Manager for Jean Louis Paladin’s Napa, which was named by Bon Appetit Magazine as one of the nations best restaurants, and had one of the country’s most valuable wine collections in “The Wine Cellar”.
 
-In 2004, Cordova was retained by MGM Grand to produce a weekly event at Las Vegas’ most prestigious Ultra Lounge, “Tabu.” In 2004, he was responsible for the revival of Mandalay Bay Group's “Moorea Beach” ultra lounge in late 2004, Mr. Cordova was hired by Pure Management Group to spearhead the marketing and promotions for Pure Nightclub. In 2006, Pure was ranked the #1 “Hippest Hotspot” in the World by E! Entertainment, and Cordova was part of a team that drove $51m in revenue during that year, with PMG as a whole grossing over $110m.  In the nightclub industry Mr. Cordova is generally recognized as the key player to Pure’s immense success over the past years.
+Following Rio Secco, Gutierrez was asked to take over operations of The Voodoo Lounge and Restaurant.  There he was responsible for a multi-million dollar operation with live entertainment, an ultra lounge and a fine dining restaurant perched on the hotels 51st floor.  All of this experience eventually led to Gutierrez taking the top GM spots at the House of Blues Foundation Room as well as Rick Moonen’s flagship restaurant RM Seafood.
 
-Cordova joined Angel Management Group in 2008, and immediately set about improving programming and operations at Wet Republic at MGM Grand. He was instrumental in developing the pool’s reputation for being the place in Las Vegas for A-list celebrities, performers and athletes, and after less than a year under his leadership, the venue saw gross revenues more than double—from $5 million in 2008 to more than $13 million in 2009.
+In 2007, he accepted the position of Director of Food and Beverage at Mandalay Bay.  There he worked with Charlie Palmer, Alain Ducasse, Hubert Keller and Michael Mina whom all have restaurants at the hotel. In addition to the fine dining restaurants, he oversaw the property’s bars, lounges, nightclubs, pool operations, banquets, in-room dining and quick service divisions.
 
-As Vice President of Marketing at Angel Management Group, Cordova is responsible for overseeing the marketing, promotions and VIP services for the entire company portfolio.
+Over the course of his tenure he opened new venues, re-positioned several outlets, and oversaw the food and beverage operations for the country’s biggest sporting events and concerts.
+
+Gutierrez currently serves as Executive Director of Operations for AMG, with general oversight over AMG’s entire portfolio of venues, as well as responsibility for managing hotel & casino relationships on a food & beverage level.
+EOP
+)
+
+Profile.create(
+  :name => 'Robert Urichuk',
+  :body => <<EOP
+Robert began his extensive executive management experience in the hospitality industry back in Alberta, Canada where he directed and assisted in the development and execution in the expansion plans and maintenance of all capital projects as Director of Operations for the Arbco Restaurants Group.
+
+In 1989, he made his move his into the Hotel Industry where he spent six years with the prestigious 5 Star Luxury Hotel Group, Fairmont Hotels & Resorts firstly serving as Director of Catering & Sales, followed by a promotion to Director of Food & Beverage.
+
+Robert left Canada in 1996 to pursue his goals and passion in the City of Entertainment, Las Vegas. He made his first mark at the Stratosphere Hotel & Casino where he took on the role of Food & Beverage, General Manger and was engaged as an acting member of the pre-opening management team.
+
+In 1998 Robert was recruited by the MGM Grand Hotel & Casino to take on a Senior Management role in Catering & Sales specializing in penetrating the corporate events market for the properties newly constructed Conference Center encompassing over 500,000 square feet of function space.
+
+After six years, Robert joined ICE Nightclub as its Director of Catering & Sales with focus on driving millions of dollars in ancillary revenue to the property through corporate event buy-outs of the venue during pre-club hours or on normally closed days.
+
+In 2004, Robert was sought after by Nightclub/Restaurant developer PURE Management Group with a portfolio of eleven venues to head up and lead its Catering & Sales Division in the capacity of Vice President with emphasis on developing and creating a user friendly corporate environment where quality, service and execution would be the industry standard for all else to follow.
+
+In 2010, he joined The Nightlife Group at the Hard Rock Hotel & Casino as their Executive Director of Nightlife Sales responsible for corporate and private events sales for the properties six nightlife venues.
+
+Robert currently serves as VP of Catering & Sales for Angel Management Group where he oversees Corporate Sales, Catering, and Banquet Operations. 
 EOP
 )
 puts "Created #{Profile.count} Profiles."
@@ -80,8 +120,8 @@ puts "Created #{Profile.count} Profiles."
 
 puts "Creating PressReleases..."
 PressRelease.create(
-  :title => 'AMG Buys Pure Management',
-  :body => "AMG's team of VIP Hosts and VIP Marketing professionals have been hand picked from the finest companies in Las Vegas.",
+  :title => 'Neil Moffitt Top 30 Influential People',
+  :body => "Neil Moffitt declared among the top 30 most influential people in Club World.",
   :pdf => File.new(Rails.root + 'public/press/top30_neilmoffitt.pdf'),
   :image => File.new(Rails.root + 'public/images/page_press/tn_moffitt.png')
 )
