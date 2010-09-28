@@ -228,16 +228,6 @@ ClientVenue.create(
   :icon => File.new(Rails.root + 'db/seeds/venues/icons/wetrepublic.png')
 )
 ClientVenue.create(
-  :name => "Tabú",
-  :body => "Las Vegas hot spots have never been this hot. Interactive projections mesmerize with sensual images. Internationally renowned DJs conjure a cool and casual vibe that put it on everyone’s list of Las Vegas nightclubs.Stunning models/servers tempt with nouveau classic cocktails. This is the forbidden world of Tabú. Are you ready for a nightspot that’s too hot to touch?",
-  :image => File.new(Rails.root + 'public/images/page_clientvenues/tabu.png')
-)
-ClientVenue.create(
-  :name => "Studio 54",
-  :body => "The legend lives at MGM Grand. A modern interpretation of the original, featuring state-of-the-art sound, video and lighting, and chart-topping dance music.  The 22,000-square-foot nightclub offers four dance floors and bars, an exclusive area on the second floor for invited guests, and several semi-private lounges capable of accommodating up to 400 people. Today's Studio 54 blends high-energy music that could make the original '70's club blush and gives the other Las Vegas clubs something to aim for.",
-  :image => File.new(Rails.root + 'public/images/page_clientvenues/studio54.png')
-)
-ClientVenue.create(
   :name => "Vanity",
   :body => "With its next-level bathrooms and eye-popping LED chandelier centerpiece, Vanity truly delivers on its promise of a stunning nightlife experience. With indoor and outdoor bar areas, premium VIP seating options and gorgeous décor and furnishings, Vanity is truly the jewel in the Hard Rock nightlife crown, and the home of the legendary SIN Sunday industry party.",
   :image => File.new(Rails.root + 'db/seeds/venues/vanity.png'),
@@ -254,6 +244,16 @@ ClientVenue.create(
   :body => "Moorea Beach Club provides guests with a private, adult, upscale and sophisticated day-club experience. Enjoy fantastic views of the beach, cushioned chaise lounges, high-energy music, poolside massage services and the best, personalized attendants in Las Vegas. Moorea features day beds, opium beds and pavilions, along with regular celebrity guests to complete the upscale daylife experience.",
   :image => File.new(Rails.root + 'db/seeds/venues/moorea.png'),
   :icon => File.new(Rails.root + 'db/seeds/venues/icons/moorea.png')
+)
+ClientVenue.create(
+  :name => "Studio 54",
+  :body => "The legend lives at MGM Grand. A modern interpretation of the original, featuring state-of-the-art sound, video and lighting, and chart-topping dance music.  The 22,000-square-foot nightclub offers four dance floors and bars, an exclusive area on the second floor for invited guests, and several semi-private lounges capable of accommodating up to 400 people. Today's Studio 54 blends high-energy music that could make the original '70's club blush and gives the other Las Vegas clubs something to aim for.",
+  :image => File.new(Rails.root + 'public/images/page_clientvenues/studio54.png')
+)
+ClientVenue.create(
+  :name => "Tabú",
+  :body => "Las Vegas hot spots have never been this hot. Interactive projections mesmerize with sensual images. Internationally renowned DJs conjure a cool and casual vibe that put it on everyone’s list of Las Vegas nightclubs.Stunning models/servers tempt with nouveau classic cocktails. This is the forbidden world of Tabú. Are you ready for a nightspot that’s too hot to touch?",
+  :image => File.new(Rails.root + 'public/images/page_clientvenues/tabu.png')
 )
 ClientVenue.create(
   :name => "miX Lounge",
