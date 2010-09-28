@@ -7,14 +7,11 @@ feature "W3C Validation" do
     Capybara.run_server = true
   end
 
-  scenario "HTML" do
+  scenario "HTML output is valid" do
     validate_url '/'
     validate_url '/about_us'
     validate_url '/services'
     validate_url '/contact'
   end
-
-  # scenario "feed XML" do
-  # end
 
 end
