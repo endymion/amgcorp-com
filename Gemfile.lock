@@ -1,3 +1,10 @@
+GIT
+  remote: http://github.com/cavalle/steak.git
+  revision: 8633178
+  specs:
+    steak (1.0.0.beta.2)
+      rspec
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -126,6 +133,7 @@ GEM
       polyglot (>= 0.3.1)
     trollop (1.16.2)
     tzinfo (0.3.23)
+    w3c_validators (1.0.2)
     xml-simple (1.0.12)
 
 PLATFORMS
@@ -146,3 +154,5 @@ DEPENDENCIES
   rspec-rails (>= 2.0.0.beta.17)
   ruby-debug (= 0.10.0)
   sqlite3-ruby
+  steak!
+  w3c_validators

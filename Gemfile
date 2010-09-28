@@ -40,3 +40,5 @@ gem "factory_girl"
 gem "cucumber"
 gem "cucumber-rails"
 gem "capybara"
+gem 'steak', :git => 'http://github.com/cavalle/steak.git'
+gem 'w3c_validators'
