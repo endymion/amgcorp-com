@@ -14,14 +14,6 @@ describe VenuesController do
     end
   end
 
-  describe "GET show" do
-    it "assigns the requested venue as @venue" do
-      Venue.stub(:find).with("37") { mock_venue }
-      get :show, :id => "37"
-      assigns(:venue).should be(mock_venue)
-    end
-  end
-
   describe "GET new" do
     it "assigns a new venue as @venue" do
       Venue.stub(:new) { mock_venue }
