@@ -1,12 +1,10 @@
 AmgcorpCom::Application.routes.draw do
 
-  resources :venues
-
   root :to => 'root#home'
 
   resources :profiles, :controller => :profiles
-
   resources :press, :controller => :press_releases, :as => :press_releases
+  resources :venues
 
   match 'home' => 'root#home', :as => :public_home
   match 'about_us' => 'root#about_us', :as => :public_about_us
