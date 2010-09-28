@@ -120,6 +120,12 @@ puts "Created #{Profile.count} Profiles."
 
 puts "Creating PressReleases..."
 PressRelease.create(
+  :title => 'Angel Management Group Acquires Pure Management Group',
+  :body => "Deal Makes AMG Largest Nightlife Company in Las Vegas.",
+  :pdf => File.new(Rails.root + 'public/press/amg_pmg.pdf'),
+  :image => File.new(Rails.root + 'public/images/page_press/tn_pure.png')
+)
+PressRelease.create(
   :title => 'Neil Moffitt Top 30 Influential People',
   :body => "Neil Moffitt declared among the top 30 most influential people in Club World.",
   :pdf => File.new(Rails.root + 'public/press/top30_neilmoffitt.pdf'),
@@ -137,7 +143,7 @@ PressRelease.create(
   :pdf => File.new(Rails.root + 'public/press/kardashian_wr.pdf'),
   :image => File.new(Rails.root + 'public/images/page_press/tn_kim.png')
 )
-puts "Created #{PressRelease.count} PressRelease."
+puts "Created #{PressRelease.count} PressReleases."
 
 
 puts "Creating OwnedVenues..."
@@ -216,9 +222,20 @@ puts "Created #{OperatedVenue.count} OperatedVenues."
 puts "Creating ClientVenues..."
 ClientVenue.create(
   :name => "Wet Republic",
-  :body => "Since opening in 2007, Wet Republic has rocketed to the forefront of the Las Vegas pool scene under the stewardship of AMG. With over 6000 guests weekly, and an unmatched roster of celebrity hosts and internationally renowned guest DJ's, Wet Republic offers a pool party experience like no other. From the saltwater pools to the elevated Cabanas and elite private Bungalows, every level of Wet Republic is focused on creating an upscale, energetic pool party experience.",
+  :body => "The legend lives at MGM Grand. A modern interpretation of the original, featuring state-of-the-art sound, video and lighting, and chart-topping dance music.
+  The 22,000-square-foot nightclub offers four dance floors and bars, an exclusive area on the second floor for invited guests, and several semi-private lounges capable of accommodating up to 400 people. Today's Studio 54 blends high-energy music that could make the original '70's club blush and gives the other Las Vegas clubs something to aim for.",
   :image => File.new(Rails.root + 'db/seeds/venues/wetrepublic.png'),
   :icon => File.new(Rails.root + 'db/seeds/venues/icons/wetrepublic.png')
+)
+ClientVenue.create(
+  :name => "Tabú",
+  :body => "Las Vegas hot spots have never been this hot. Interactive projections mesmerize with sensual images. Internationally renowned DJs conjure a cool and casual vibe that put it on everyone’s list of Las Vegas nightclubs.Stunning models/servers tempt with nouveau classic cocktails. This is the forbidden world of Tabú. Are you ready for a nightspot that’s too hot to touch?",
+  :image => File.new(Rails.root + 'public/images/page_clientvenues/tabu.png')
+)
+ClientVenue.create(
+  :name => "Studio 54",
+  :body => "The legend lives at MGM Grand. A modern interpretation of the original, featuring state-of-the-art sound, video and lighting, and chart-topping dance music.  The 22,000-square-foot nightclub offers four dance floors and bars, an exclusive area on the second floor for invited guests, and several semi-private lounges capable of accommodating up to 400 people. Today's Studio 54 blends high-energy music that could make the original '70's club blush and gives the other Las Vegas clubs something to aim for.",
+  :image => File.new(Rails.root + 'public/images/page_clientvenues/studio54.png')
 )
 ClientVenue.create(
   :name => "Vanity",
