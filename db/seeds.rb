@@ -1,3 +1,5 @@
+puts "Creating Profiles..."
+
 Profile.create(
   :name => 'Neil Moffitt',
   :body => <<EOP
@@ -73,132 +75,127 @@ Cordova joined Angel Management Group in 2008, and immediately set about improvi
 As Vice President of Marketing at Angel Management Group, Cordova is responsible for overseeing the marketing, promotions and VIP services for the entire company portfolio.
 EOP
 )
+puts "Created #{Profile.count} Profiles."
 
 
+puts "Creating PressReleases..."
 PressRelease.create(
   :title => 'AMG Buys Pure Management',
   :body => "AMG's team of VIP Hosts and VIP Marketing professionals have been hand picked from the finest companies in Las Vegas.",
   :pdf => File.new(Rails.root + 'db/seeds/press_releases/top30_nielmoffitt.pdf'),
   :image => File.new(Rails.root + 'db/seeds/press_releases/thumbnail.jpg')
 )
+puts "Created #{PressRelease.count} PressRelease."
 
 
+puts "Creating OwnedVenues..."
 OwnedVenue.create(
   :name => 'Pure',
   :body => "One of the world's best known nightlife brands and voted the country's #1 club by E! Entertainment Television, PURE features 36,000 square feet of dance floors, lavish seating areas and world-class décor. The two-story nightclub combines the allure of the red carpet with the pulse-pounding sounds of the hottest DJ's to create the most dynamic nightlife destination in the world's most dynamic city.",
   :image => File.new(Rails.root + 'db/seeds/venues/pure.png'),
   :icon => File.new(Rails.root + 'db/seeds/venues/icons/pure.png')
 )
-
 OwnedVenue.create(
   :name => 'LAX',
   :body => "Young and sophisticated. Stylish and energetic. LAX attracts only the most discriminating club-goers, A-list celebs, and the social jet set. LAX is outfitted in rich, red leathers and adorned with oversized mirrors and shimmering chandeliers, creating a modern and luxurious feel throughout the venue.",
   :image => File.new(Rails.root + 'db/seeds/venues/lax.png'),
   :icon => File.new(Rails.root + 'db/seeds/venues/icons/lax.png')
 )
-
 OwnedVenue.create(
   :name => 'XOXO Supperclub',
   :body => "Opening on New Years Eve 2010/11, XOXO is Las Vegas' first Supperclub, a high energy indoor / outdoor restaurant and lounge offering a premier dining experience which evolves into a nightlife atmosphere after the plates are cleared.",
   :image => File.new(Rails.root + 'db/seeds/venues/xoxo.png'),
   :icon => File.new(Rails.root + 'db/seeds/venues/icons/xoxo.png')
 )
-
 OwnedVenue.create(
   :name => 'Social House',
   :body => "Social House is an innovative Sushi restaurant with delectable cuisine and unrivaled décor. Its bold culinary vision was created by Executive Chef Joe Elevado, who trained under the acclaimed Nobuyuki \"Nobu\" Matsuhisa, as well as the \"Japanese Iron Chef,\" Masaharu Morimoto. The Social House menu is a masterpiece of Pan-Asian cuisine and Sushi prepared with the freshest ingredients, all deeply influenced by Chef Elevado's extensive travels throughout Japan and Southeast Asia. Complementing this thoughtful lineup is a dining space that provides a warmth and intimacy suitable to creating an unforgettable evening.",
   :image => File.new(Rails.root + 'db/seeds/venues/socialhouse.png'),
   :icon => File.new(Rails.root + 'db/seeds/venues/icons/socialhouse.png')
 )
-
 OwnedVenue.create(
   :name => 'Noir Bar',
   :body => "Reminiscent of a modern speakeasy, only those fortunate enough to get on the elite guest list will be allowed entrance. Once inside, guests will appreciate the luxurious décor and truly personalized service from mixologists who create custom cocktails tailored to each individual's unique taste. Noir Bar caters eclusively to the high-end club customer looking for a truly exclusive nightlife experience.",
   :image => File.new(Rails.root + 'db/seeds/venues/noir.png')
 )
-
 OwnedVenue.create(
   :name => 'Coyote Ugly',
   :body => "Misbehaviour is encouraged at Coyote Ugly, the Las Vegas Strip's wildest watering hole. From dancing on the bar to hosing down the crowd, the beautiful and wild \"Coyotes\" are there to remind you that it's a drinking bar and women have all the control. The way it should be.",
   :image => File.new(Rails.root + 'db/seeds/venues/coyoteugly.png'),
   :icon => File.new(Rails.root + 'db/seeds/venues/icons/coyoteugly.png')
 )
-
 OwnedVenue.create(
   :name => "Dick's Last Resort",
   :body => "Whether you're looking to rock out to live music, dig into buckets of delicious finger foods or rally up your buddies to watch the big game, Dick's Last Resort is the spot on The Strip for all ages to show off their silly sides. With no limit to the level of fun or spontaneity and no better word to describe it than outrageous, Dick's Last Resort is fun for all and all in fun for those who dare to enter. The only place where it feels as though you're getting away with breaking the rules - come get your kicks at Dick's, \"The Shame 'O The Strip.\"",
   :image => File.new(Rails.root + 'db/seeds/venues/dicks.png'),
   :icon => File.new(Rails.root + 'db/seeds/venues/icons/dicks.png')
 )
+puts "Created #{OwnedVenue.count} OwnedVenues."
 
 
+puts "Creating OperatedVenues..."
 OperatedVenue.create(
   :name => "Hard Rock Beach Club",
   :body => "The home of the world famous Rehab pool party, Hard Rock Beach Club offers much more than just the most legendary Sunday party in the world. The lush landscapes, beautiful bodies, signature cabanas and an abundance of water make up the beautiful pools at Hard Rock. Truly an oasis in the desert, the Beach Club was selected by the Travel Channel as one of the top 10 pools in the world.",
   :image => File.new(Rails.root + 'db/seeds/venues/hrbc.png'),
   :icon => File.new(Rails.root + 'db/seeds/venues/icons/hrbc.png')
 )
-
 OperatedVenue.create(
   :name => "Skybar",
   :body => "Furthering the SKYBAR legacy that is a staple on the Sunset Strip, the all-new SKYBAR at Hard Rock elevates the Las Vegas pool scene by offering guests a new level of social relaxation.",
   :image => File.new(Rails.root + 'db/seeds/venues/skybar.png'),
   :icon => File.new(Rails.root + 'db/seeds/venues/icons/skybar.png')
 )
-
 OperatedVenue.create(
   :name => "Venus Pool Club",
   :body => "Venus Pool Club offers legendary indulgence for sun worshippers 21 and up. Featuring impeccable service in a hip poolside paradise, it's a unique alternative to the chaos of traditional Vegas pool parties. Lush and elegant, Venus features posh cabanas, oversized chaise lounges, an air-conditioned bar and a light and delicious food menu. Top it off with European style sunbathing and poolside body massages, and Venues truly delivers on a one-of-a-kind experience.",
   :image => File.new(Rails.root + 'db/seeds/venues/venus.png'),
   :icon => File.new(Rails.root + 'db/seeds/venues/icons/venus.png')
 )
-
 OperatedVenue.create(
   :name => "Aura Nightclub",
   :body => "Discover a new world of style and luxury. Aura Nightclub at Atlantis, Paradise Island has transformed nightlife in the Bahamas with exceptional service, internationally renowned DJ's, and impeccable design. With 9,000 square feet of stylish space, Aura's sunken dance floor is surrounded by lush VIp seating, while the raised DJ booth sets the pulse for the night. For club goers searching for an over-the-top vacation experience, Aura has implemented European-style bottle service, leaving the illustrious staff to tend to every pressing need.",
   :image => File.new(Rails.root + 'db/seeds/venues/aura.png'),
   :icon => File.new(Rails.root + 'db/seeds/venues/icons/aura.png')
 )
+puts "Created #{OperatedVenue.count} OperatedVenues."
 
 
+puts "Creating ClientVenues..."
 ClientVenue.create(
   :name => "Wet Republic",
   :body => "Since opening in 2007, Wet Republic has rocketed to the forefront of the Las Vegas pool scene under the stewardship of AMG. With over 6000 guests weekly, and an unmatched roster of celebrity hosts and internationally renowned guest DJ's, Wet Republic offers a pool party experience like no other. From the saltwater pools to the elevated Cabanas and elite private Bungalows, every level of Wet Republic is focused on creating an upscale, energetic pool party experience.",
   :image => File.new(Rails.root + 'db/seeds/venues/wetrepublic.png'),
   :icon => File.new(Rails.root + 'db/seeds/venues/icons/wetrepublic.png')
 )
-
 ClientVenue.create(
   :name => "Vanity",
   :body => "With its next-level bathrooms and eye-popping LED chandelier centerpiece, Vanity truly delivers on its promise of a stunning nightlife experience. With indoor and outdoor bar areas, premium VIP seating options and gorgeous décor and furnishings, Vanity is truly the jewel in the Hard Rock nightlife crown, and the home of the legendary SIN Sunday industry party.",
   :image => File.new(Rails.root + 'db/seeds/venues/vanity.png'),
   :icon => File.new(Rails.root + 'db/seeds/venues/icons/vanity.png')
 )
-
 ClientVenue.create(
   :name => "Rok Vegas",
   :body => "The Las Vegas outpost of the legendary Miami venue, Rok Vegas is a relaxed nightclub experience for those who want to skip the red rope attitude without compromising on top notch music, amazing visuals and a welcoming atmosphere. With an indoor nightclub featuring the city's first 360° video screen and premium VIP seating, and an outdoor bar overlooking the strip, there's something for everyone at Rok.",
   :image => File.new(Rails.root + 'db/seeds/venues/rokvegas.png'),
   :icon => File.new(Rails.root + 'db/seeds/venues/icons/rokvegas.png')
 )
-
 ClientVenue.create(
   :name => "Moorea Beach Club",
   :body => "Moorea Beach Club provides guests with a private, adult, upscale and sophisticated day-club experience. Enjoy fantastic views of the beach, cushioned chaise lounges, high-energy music, poolside massage services and the best, personalized attendants in Las Vegas. Moorea features day beds, opium beds and pavilions, along with regular celebrity guests to complete the upscale daylife experience.",
   :image => File.new(Rails.root + 'db/seeds/venues/moorea.png'),
   :icon => File.new(Rails.root + 'db/seeds/venues/icons/moorea.png')
 )
-
 ClientVenue.create(
   :name => "miX Lounge",
   :body => "High atop THEhotel, this fashionable hotspot is one of the most stylishly hip lounges around. Offering stellar cocktail concoctions, an innovative bar menu and a seductive blend of music spun by savvy DJs, every night turns into an event at the Mix Lounge. Reserve a table indoors, or step out on the 64th-floor balcony and enjoy breathtaking views of the famed Las Vegas Strip.",
   :image => File.new(Rails.root + 'db/seeds/venues/mix.png'),
   :icon => File.new(Rails.root + 'db/seeds/venues/icons/mix.png')
 )
-
 ClientVenue.create(
   :name => "eye candy sound lounge",
   :body => "Located in the center of Mandalay Bay’s casino floor, eyecandy sound lounge & bar features unrivaled technology that redefines the Las Vegas nightlife experience. Featuring high-tech twists on the classic cocktail lounge, eyecandy combines interactive touch tables, revolutionary sound stations and a dance floor with an ever-changing landscape. A contemporary twist on the typical Las Vegas lounge, the eyecandy bar features an inviting atmosphere, chic design and plush seating. For the first time in Las Vegas, a fiber-optic channel runs through the bar top combining lighting and movement to form a shimmering effect. With cocktails created by world-renowned Master Mixologist Tony Abou-Ganim, this setting offers the perfect getaway, just steps from the casino floor.",
   :image => File.new(Rails.root + 'db/seeds/venues/eyecandy.png'),
   :icon => File.new(Rails.root + 'db/seeds/venues/icons/eyecandy.png')
 )
+puts "Created #{ClientVenue.count} ClientVenues."
