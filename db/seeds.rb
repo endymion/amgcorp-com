@@ -82,8 +82,20 @@ puts "Creating PressReleases..."
 PressRelease.create(
   :title => 'AMG Buys Pure Management',
   :body => "AMG's team of VIP Hosts and VIP Marketing professionals have been hand picked from the finest companies in Las Vegas.",
-  :pdf => File.new(Rails.root + 'db/seeds/press_releases/top30_nielmoffitt.pdf'),
-  :image => File.new(Rails.root + 'db/seeds/press_releases/thumbnail.jpg')
+  :pdf => File.new(Rails.root + 'public/press/top30_neilmoffitt.pdf'),
+  :image => File.new(Rails.root + 'public/images/page_press/tn_moffitt.png')
+)
+PressRelease.create(
+  :title => "Sean \"Diddy\" Combs Hosts Wet Republic",
+  :body => 'Sean "Diddy" Combs jumped on the mic as he hosted Wet Republic Saturdays May 16th surprising everyone with a performance to get the party jumping.',
+  :pdf => File.new(Rails.root + 'public/press/diddy_wr.pdf'),
+  :image => File.new(Rails.root + 'public/images/page_press/tn_diddy.png')
+)
+PressRelease.create(
+  :title => "Kourtney Kardashian’s Birthday with sisters Kim & Khloe",
+  :body => "It's fine to get wet at a pool party, but not before you go swimming. Just ask Kourtney Kardashian, who celebrated her 31st birthday with sisters Kim & Khloe at Wet Republic on Saturday.",
+  :pdf => File.new(Rails.root + 'public/press/kardashian_wr.pdf'),
+  :image => File.new(Rails.root + 'public/images/page_press/tn_kim.png')
 )
 puts "Created #{PressRelease.count} PressRelease."
 
