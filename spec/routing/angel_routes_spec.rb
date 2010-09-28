@@ -14,19 +14,15 @@ describe "Angel Main Site Routing" do
   end
 
   it "has a owned venues" do
-    { :get => '/owned_venues'}.should route_to(:controller => "root", :action => "owned_venues")
+    { :get => '/owned_venues'}.should route_to(:controller => "venues", :action => "index")
   end
 
   it "has operated venues" do
-    { :get => 'operated_venues'}.should route_to(:controller => "root", :action => "operated_venues")
+    { :get => 'operated_venues'}.should route_to(:controller => "venues", :action => "index")
   end
 
   it "has client venues" do
-    { :get => "client_venues"}.should route_to(:controller => "root", :action => "client_venues")
-  end
-
-  it "has services" do
-    { :get => "services"}.should route_to(:controller => "root", :action => "services")
+    { :get => "client_venues"}.should route_to(:controller => "venues", :action => "index")
   end
 
   it "has contact" do

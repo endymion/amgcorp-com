@@ -1,0 +1,2 @@
+class OwnedVenue < Venue
+end

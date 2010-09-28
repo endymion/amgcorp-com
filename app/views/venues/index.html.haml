@@ -1,18 +1,30 @@
-%h1= t('.title')
-%p= link_to t('.new_venue'), new_venue_path
-
-%table
-  %thead
-    %tr
-      %th= Venue.human_attribute_name :type
-      %th= Venue.human_attribute_name :name
-      %th{:colspan => 3}= t 'actions'
+%div{:id => "content_#{@venue_type.downcase}s"}
   
-  %tbody
-    - for venue in @venues
-      %tr{ :class => cycle(:odd, :even) }
-        %td= venue.type
-        %td= venue.name
-        %td.action= link_to t('show'), venue
-        %td.action= link_to t('edit'), edit_venue_path(venue)
-        %td.action= link_to t('destroy'), venue, :confirm => t('are_you_sure'), :method => :delete
+  - if session[:admin]
+    %p= link_to t('.new_venue'), new_venue_path
+
+    %div#accordion
+
+      - for venue in @venues
+        %h2
+          %a{:href => "##{venue.name.gsub(/\W/,'_')}"}
+            = venue.name
+        %div.container
+          = image_tag venue.image.url
+          %p
+            = venue.body
+          
+          = link_to t('edit'), edit_venue_path(venue)
+          = link_to t('destroy'), venue, :confirm => t('are_you_sure'), :method => :delete
+
+  - else
+
+    %div#accordion
+      - for venue in @venues
+        %h2
+          %a{:href => "##{venue.name.gsub(/\W/,'_')}"}
+            = venue.name
+        %div.container
+          = image_tag venue.image.url
+          %p
+            = venue.body

@@ -1,0 +1,2 @@
+class OperatedVenue < Venue
+end

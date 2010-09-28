@@ -12,11 +12,6 @@ describe RootController do
     response.should be_success
   end
 
-  it "has a services page" do
-    get :services
-    response.should be_success
-  end
-
   it "has a contact page" do
     get :contact
     response.should be_success

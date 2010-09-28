@@ -1,3 +1,4 @@
-%h1= t '.title'
-%p= link_to t('back'), venues_path
-= render 'form'
+%div#content_ownedvenues
+  %h1= t '.title'
+  = render 'form'
+  %p= link_to t('cancel'), venues_path

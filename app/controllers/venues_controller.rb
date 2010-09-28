@@ -2,7 +2,19 @@ class VenuesController < ApplicationController
   # GET /venues
   # GET /venues.xml
   def index
-    @venues = Venue.all
+
+    @venue_type = case request.url
+    when /owned/
+      'OwnedVenue'
+    when /operated/
+      'OperatedVenue'
+    when /client/
+      'ClientVenue'
+    else
+      'Venue'
+    end
+
+    @venues = Venue.where(:type=>@venue_type).all
 
     respond_to do |format|
       format.html # index.html.erb
@@ -13,7 +25,16 @@ class VenuesController < ApplicationController
   # GET /venues/1
   # GET /venues/1.xml
   def show
-    redirect_to :action => :index
+    venue = Venue.find(params[:id])
+
+    path = case venue.class.to_s
+    when 'OwnedVenue' then owned_venues_path
+    when 'OperatedVenue' then operated_venues_path
+    when 'ClientVenue' then client_venues_path
+    else venues_path
+    end
+
+    redirect_to path
   end
 
   # GET /venues/new
@@ -32,9 +53,16 @@ class VenuesController < ApplicationController
     @venue = Venue.find(params[:id])
   end
 
+  before_filter :get_submitted_venue, :only => [:create, :update]
+  def get_submitted_venue
+    params[:venue] = params[:owned_venue] if params[:venue].blank?
+    params[:venue] = params[:operated_venue] if params[:venue].blank?
+    params[:venue] = params[:client_venue] if params[:venue].blank?
+  end
+
   # POST /venues
   # POST /venues.xml
-  def create
+  def create        
     @venue = Venue.new(params[:venue])
 
     respond_to do |format|

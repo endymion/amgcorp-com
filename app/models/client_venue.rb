@@ -1,0 +1,2 @@
+class ClientVenue < Venue
+end

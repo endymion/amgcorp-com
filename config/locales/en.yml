@@ -22,3 +22,10 @@ en:
       title: 'Edit Press Release'
     new:
       title: 'New Press Release'
+  venues:
+    index:
+      new_venue: 'new venue'
+    edit:
+      title: 'Edit Venue'
+    new:
+      title: 'New Venue'
