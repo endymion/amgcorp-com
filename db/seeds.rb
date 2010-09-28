@@ -80,8 +80,8 @@ puts "Created #{Profile.count} Profiles."
 
 puts "Creating PressReleases..."
 PressRelease.create(
-  :title => 'AMG Buys Pure Management',
-  :body => "AMG's team of VIP Hosts and VIP Marketing professionals have been hand picked from the finest companies in Las Vegas.",
+  :title => 'Neil Moffitt Top 30 Influential People',
+  :body => "Neil Moffitt declared among the top 30 most influential people in Club World.",
   :pdf => File.new(Rails.root + 'public/press/top30_neilmoffitt.pdf'),
   :image => File.new(Rails.root + 'public/images/page_press/tn_moffitt.png')
 )
