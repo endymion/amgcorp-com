@@ -1,0 +1,19 @@
+= form_for(@venue) do |f|
+  - if @venue.errors.any?
+    #errorExplanation
+      %h2= "#{pluralize(@venue.errors.count, 'error')} prohibited this user from being saved:"
+      %ul
+      - @venue.errors.full_messages.each do |msg|
+        %li= msg
+  
+  .field
+    = f.label :type
+    %br
+    = f.text_field :type
+  .field
+    = f.label :name
+    %br
+    = f.text_field :name
+
+  .actions
+    = f.submit

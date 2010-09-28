@@ -1,5 +1,7 @@
 AmgcorpCom::Application.routes.draw do
 
+  resources :venues
+
   root :to => 'root#home'
 
   resources :profiles, :controller => :profiles
