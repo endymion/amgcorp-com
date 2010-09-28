@@ -22,39 +22,39 @@
         });
       });
     = csrf_meta_tag
-    
 
+  %body
     = yield
 
-  %div#nav
-    %a{:href => "/"}
-      %img{:src => "/images/global/amglogo.png", :width => "207", :height => "67px" }
-    %ul
-      %li
-        = link_to 'About Us', public_about_us_path
-      %li
-        = link_to 'Profiles', profiles_path
-      %li
-        = link_to 'Owned Venues', public_owned_venues_path
-      %li
-        = link_to 'Operated Venues', public_operated_venues_path
-      %li
-        = link_to 'Client Venues', public_client_venues_path
-      %li
-        = link_to 'Contact', public_contact_path
-      %li
-        = link_to 'Press', press_releases_path
-      - if session[:admin]
+    %div#nav
+      %a{:href => "/"}
+        %img{:src => "/images/global/amglogo.png", :width => "207", :height => "67" }
+      %ul
         %li
-          = link_to 'Sign Out', sign_out_path
+          = link_to 'About Us', public_about_us_path
+        %li
+          = link_to 'Profiles', profiles_path
+        %li
+          = link_to 'Owned Venues', public_owned_venues_path
+        %li
+          = link_to 'Operated Venues', public_operated_venues_path
+        %li
+          = link_to 'Client Venues', public_client_venues_path
+        %li
+          = link_to 'Contact', public_contact_path
+        %li
+          = link_to 'Press', press_releases_path
+        - if session[:admin]
+          %li
+            = link_to 'Sign Out', sign_out_path
     
-  :javascript
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-18761469-1']);
-    _gaq.push(['_trackPageview']);
+    :javascript
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-18761469-1']);
+      _gaq.push(['_trackPageview']);
 
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
