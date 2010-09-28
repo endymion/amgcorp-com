@@ -10,11 +10,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100928163653) do
+ActiveRecord::Schema.define(:version => 20100928180018) do
 
   create_table "press_releases", :force => true do |t|
     t.string   "title"
-    t.string   "body"
+    t.text     "body",               :limit => 255
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "image_file_name"
@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(:version => 20100928163653) do
     t.string   "title"
     t.string   "subtitle"
     t.date     "in_the_business_since"
-    t.string   "body"
+    t.text     "body",                  :limit => 255
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -42,7 +42,7 @@ ActiveRecord::Schema.define(:version => 20100928163653) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "body"
+    t.text     "body",               :limit => 255
     t.string   "image_file_name"
     t.string   "image_content_type"
     t.integer  "image_file_size"
