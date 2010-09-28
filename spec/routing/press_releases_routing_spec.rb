@@ -4,7 +4,7 @@ describe PressReleasesController do
   describe "routing" do
 
     it "recognizes and generates #index" do
-      { :get => "/press_releases" }.should route_to(:controller => "press_releases", :action => "index")
+      { :get => "press_releases" }.should route_to(:controller => "press_releases", :action => "index")
     end
 
     it "recognizes and generates #new" do
@@ -30,6 +30,5 @@ describe PressReleasesController do
     it "recognizes and generates #destroy" do
       { :delete => "/press_releases/1" }.should route_to(:controller => "press_releases", :action => "destroy", :id => "1")
     end
-
   end
 end
