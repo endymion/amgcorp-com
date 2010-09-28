@@ -20,14 +20,6 @@ describe ProfilesController do
     end
   end
 
-  describe "GET show" do
-    it "assigns the requested profile as @profile" do
-      Profile.stub(:find).with("37") { mock_profile }
-      get :show, :id => "37"
-      assigns(:profile).should be(mock_profile)
-    end
-  end
-
   describe "GET new" do
     it "assigns a new profile as @profile" do
       Profile.stub(:new) { mock_profile }

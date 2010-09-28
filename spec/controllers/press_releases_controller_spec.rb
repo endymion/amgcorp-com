@@ -2,6 +2,12 @@ require 'spec_helper'
 
 describe PressReleasesController do
 
+  before(:each) do 
+    @credentials = ActionController::HttpAuthentication::Basic.encode_credentials(
+      ENV['ADMIN_USERNAME'], ENV['ADMIN_PASSWORD'])
+    request.env['HTTP_AUTHORIZATION'] = @credentials
+  end
+
   def mock_press_release(stubs={})
     @mock_press_release ||= mock_model(PressRelease, stubs).as_null_object
   end
@@ -11,14 +17,6 @@ describe PressReleasesController do
       PressRelease.stub(:all) { [mock_press_release] }
       get :index
       assigns(:press_releases).should eq([mock_press_release])
-    end
-  end
-
-  describe "GET show" do
-    it "assigns the requested press_release as @press_release" do
-      PressRelease.stub(:find).with("37") { mock_press_release }
-      get :show, :id => "37"
-      assigns(:press_release).should be(mock_press_release)
     end
   end
 
