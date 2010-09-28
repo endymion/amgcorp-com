@@ -77,10 +77,7 @@ EOP
 
 PressRelease.create(
   :title => 'AMG Buys Pure Management',
-  :body => "AMG's team of VIP Hosts and VIP Marketing professionals have been hand picked from the finest companies in Las Vegas."
-)
-
-PressRelease.create(
-  :title => 'AMG Buys Pure Management (really!)',
-  :body => "AMG's badass team of VIP Hosts and VIP Marketing professionals have been hand picked from the finest companies in Las Vegas."
+  :body => "AMG's team of VIP Hosts and VIP Marketing professionals have been hand picked from the finest companies in Las Vegas.",
+  :pdf => File.new(Rails.root + 'db/seeds/press_releases/top30_nielmoffitt.pdf'),
+  :image => File.new(Rails.root + 'db/seeds/press_releases/thumbnail.jpg')
 )
