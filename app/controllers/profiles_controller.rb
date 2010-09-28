@@ -1,5 +1,5 @@
 class ProfilesController < ApplicationController
-  before_filter :authenticate
+  before_filter :authenticate, :except => [:index]
 
   # GET /profiles
   # GET /profiles.xml

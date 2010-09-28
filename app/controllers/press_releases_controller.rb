@@ -1,5 +1,5 @@
 class PressReleasesController < ApplicationController
-  before_filter :authenticate
+  before_filter :authenticate, :except => [:index]
 
   # GET /press_releases
   # GET /press_releases.xml

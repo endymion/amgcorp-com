@@ -1,4 +1,6 @@
 class VenuesController < ApplicationController
+  before_filter :authenticate, :except => [:index]
+  
   # GET /venues
   # GET /venues.xml
   def index
