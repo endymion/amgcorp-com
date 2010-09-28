@@ -26,5 +26,14 @@
       = image_tag @venue.image.url
 
   %br
+  .field
+    = f.label :icon
+    %br
+    = f.file_field :icon
+    %br
+    - unless @venue.icon_file_name.nil?
+      = image_tag @venue.icon.url
+
+  %br
   .actions
     = f.submit
