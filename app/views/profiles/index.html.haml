@@ -7,6 +7,8 @@
         %h2
           %a{:href => "##{profile.name.gsub(/\W/,'_')}"}
             = profile.name
+        %h3
+          = profile.title
         %div.container
           != RedCloth.new(profile.body).to_html
           = link_to t('edit'), edit_profile_path(profile)
@@ -18,5 +20,7 @@
         %h2
           %a{:href => "##{profile.name.gsub(/\W/,'_')}"}
             = profile.name
+        %h3
+          = profile.title
         %div.container
           != RedCloth.new(profile.body).to_html        
