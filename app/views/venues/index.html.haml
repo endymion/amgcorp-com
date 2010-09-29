@@ -20,6 +20,7 @@
           = link_to t('down'), down_venue_path(venue), :method => :put
           %br
           = link_to t('edit'), edit_venue_path(venue)
+          \/
           = link_to t('destroy'), venue, :confirm => t('are_you_sure'), :method => :delete
 
   - else

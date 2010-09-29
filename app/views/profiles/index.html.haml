@@ -2,6 +2,8 @@
   
   - if session[:admin]
     %p= link_to t('.new_profile'), new_profile_path
+    %br
+    
     %div#profiles
       - for profile in @profiles
         %h2
@@ -16,6 +18,7 @@
             = profile.title
           != RedCloth.new(truncate(profile.body, :length => 120)).to_html
           = link_to t('edit'), edit_profile_path(profile)
+          \/
           = link_to t('destroy'), profile, :confirm => t('are_you_sure'), :method => :delete
 
   - else

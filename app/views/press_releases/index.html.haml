@@ -27,6 +27,7 @@
         = link_to t('down'), down_press_release_path(press_release), :method => :put
         %br
         = link_to t('edit'), edit_press_release_path(press_release)
+        \/
         = link_to t('destroy'), press_release, :confirm => t('are_you_sure'), :method => :delete
 
   - else
