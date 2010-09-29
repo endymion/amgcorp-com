@@ -4,7 +4,7 @@ class ProfilesController < ApplicationController
   # GET /profiles
   # GET /profiles.xml
   def index
-    @profiles = Profile.all
+    @profiles = Profile.order(:position).all
 
     respond_to do |format|
       format.html # index.html.erb
@@ -77,4 +77,14 @@ class ProfilesController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+  def up
+    (@profile = Profile.find(params[:id])).move_higher
+    redirect_to :action => :index
+  end
+  def down
+    (@profile = Profile.find(params[:id])).move_lower
+    redirect_to :action => :index
+  end
+  
 end

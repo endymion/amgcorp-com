@@ -3,7 +3,7 @@ puts "Creating Profiles..."
 Profile.create(
   :name => 'Neil Moffitt',
   :title => 'Chief Executive Officer',
-  :body => <<EOP
+  :body => <<EOP,
 Neil Moffitt is the founder and CEO of Angel Management Group, serving as the figurehead for Angel Management, creating new business and managing the company’s casino relationships at an executive level.  As leader of the company, Moffitt maintains a strong presence, lending his vast experience in the industry to sustain a progressive and dynamic role in the market.
 
 Moffitt began his career in the entertainment industry in the early 1990’s and became one of the most successful owners and operators in the United Kingdom bar and restaurant industry.  He was renowned for taking distressed assets deemed a total loss, and converting them to highly successful and desirable properties.  He received national awards for excellence on each property he developed.
@@ -22,12 +22,13 @@ Episodes of “The Club” were still airing on Spike TV, which unexpectedly led
 
 Neil Moffitt is a leader in the entertainment industry with a long and varied background in all aspects of entertainment.  Moffitt and Angel Management Group are in a unique position to create entertainment concepts utilizing global relationships and experience.  AMG will continue to expand the scope of the business, providing services and solutions for clients as well as developing innovative, hip and unique concepts in all entertainment avenues.
 EOP
+  :position => (position = 0)
 )
 
 Profile.create(
   :name => 'Alex Cordova',
   :title => 'Vice President of Marketing',
-  :body => <<EOP
+  :body => <<EOP,
 With twelve years of proprietor experience in nightclubs stretching from New York City to Las Vegas, Alex Cordova has an extensive knowledge of the nightlife industry, encompassing party planning and promotions as well as management and marketing.
 
 Cordova was educated at Williams College, after which he embarked on an impressive promotional career with many of New York’s hottest nightclubs. Over the last twelve years, Alex has positioned himself as arguably one of the most powerful promoters and event producers in the country. In New York and Las Vegas, Alex has worked with such prestigious brands as Cheetah, Eugenes, Float, Lot 61, and Pangaea through his wholly-owned company known as CliQue Entertainment. CliQue Entertainment was established as a lifestyle marketing company that specialized in event planning and nightclub consultation. During his tenure with CliQue Entertainment he handled successful events at more than twenty of New York City's top nightclubs, as well as serving as an ongoing marketing consultant for various top venues.
@@ -40,12 +41,13 @@ Cordova joined Angel Management Group in 2008, and immediately set about improvi
 
 As Vice President of Marketing at Angel Management Group, Cordova is responsible for overseeing the marketing, promotions and VIP services for the entire company portfolio.
 EOP
+  :position => (position += 1)
 )
 
 Profile.create(
   :name => 'Derek Silberstein',
   :title => 'Vice President of Operations',
-  :body => <<EOP
+  :body => <<EOP,
 After more than 15 years of experience in the food, beverage and nightlife industry, Derek Silberstein knows his business—and has the track record to prove it.
 
 After graduating from the New York Restaurant School in 1996, Silberstein’s career started big and fast when he became director of catering sales and operations for two of New York’s premier special event facilities, The 200 Fifth Club and Tribeca Rooftop.
@@ -56,12 +58,13 @@ Recognizing their similar business philosophies, drive and ambition, the two men
 
 As Vice President of Operations at Angel Management Group, Silberstein plays an integral role in all business decisions and the overall development of the company. He is also responsible for directing and maintaining company standards, policies and procedures, and oversees all operations, including casino consulting contracts for the Hard Rock Hotel, MGM Grand, Mandalay Bay and New York-New York properties in Las Vegas.
 EOP
+  :position => (position += 1)
 )
 
 Profile.create(
   :name => 'Nick McCabe',
   :title => 'Vice President of Strategy',
-  :body => <<EOP
+  :body => <<EOP,
 Nick McCabe’s career in entertainment and nightlife may have started in the U.K., but it was his passion and drive for success that brought him to the U.S.
 
 His love for technology met entertainment and nightlife during the electronic music boom of the mid ’90s, when he worked as a music producer and event promoter while attending the University of Teesside. He achieved a first class degree in interactive graphic design before he moved to Miami in 1999, where he discovered and embraced the city’s burgeoning bar and nightclub scene.
@@ -78,12 +81,13 @@ After joining Angel Management Group, McCabe continued to develop the Bacardi B-
 
 As Vice President of Strategy at Angel Management Group, McCabe currently oversees business development at AMG, as well as all technology related projects, including a trio of proprietary software solutions, TicketDriver, ArtistDriver and VenueDriver. He is also in charge of the creative team, which produces marketing and branding campaigns for MGM Grand, New York-New York and Hard Rock Hotel, among other corporate clients.
 EOP
+  :position => (position += 1)
 )
 
 Profile.create(
   :name => 'Omar Gutierrez',
   :title => 'Executive Director of Operations',
-  :body => <<EOP
+  :body => <<EOP,
 Born and raised in Las Vegas, Omar Gutierrez has spent his entire career in the hospitality industry. He has worked with the world’s best chefs and restaurateurs, managed world-class restaurants and operated one of the city’s largest food and beverage operations.
 
 Gutierrez started his career at the Rio Hotel and Casino where he was part of the team that brought Las Vegas its first casino nightclub, first luxury rooftop lounge and the restaurant that legitimized Las Vegas as a dining destination.
@@ -98,12 +102,13 @@ Over the course of his tenure he opened new venues, re-positioned several outlet
 
 Gutierrez currently serves as Executive Director of Operations for AMG, with general oversight over AMG’s entire portfolio of venues, as well as responsibility for managing hotel & casino relationships on a food & beverage level.
 EOP
+  :position => (position += 1)
 )
 
 Profile.create(
   :name => 'Robert Urichuk',
   :title => 'Vice President of Catering and Sales',
-  :body => <<EOP
+  :body => <<EOP,
 Robert began his extensive executive management experience in the hospitality industry back in Alberta, Canada where he directed and assisted in the development and execution in the expansion plans and maintenance of all capital projects as Director of Operations for the Arbco Restaurants Group.
 
 In 1989, he made his move his into the Hotel Industry where he spent six years with the prestigious 5 Star Luxury Hotel Group, Fairmont Hotels & Resorts firstly serving as Director of Catering & Sales, followed by a promotion to Director of Food & Beverage.
@@ -120,6 +125,7 @@ In 2010, he joined The Nightlife Group at the Hard Rock Hotel & Casino as their 
 
 Robert currently serves as VP of Catering & Sales for Angel Management Group where he oversees Corporate Sales, Catering, and Banquet Operations. 
 EOP
+  :position => (position += 1)
 )
 puts "Created #{Profile.count} Profiles."
 

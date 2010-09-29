@@ -36,6 +36,7 @@ GEM
       activemodel (= 3.0.0)
       activesupport (= 3.0.0)
     activesupport (3.0.0)
+    acts_as_list (0.1.2)
     arel (1.0.1)
       activesupport (~> 3.0.0)
     aws-s3 (0.6.2)
@@ -141,6 +142,7 @@ PLATFORMS
 
 DEPENDENCIES
   RedCloth
+  acts_as_list
   aws-s3
   capybara
   compass

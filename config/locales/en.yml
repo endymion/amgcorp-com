@@ -8,6 +8,8 @@ en:
   edit: edit
   destroy: destroy
   are_you_sure: 'are you sure?'
+  up: up
+  down: down
   profiles:
     index:
       new_profile: 'new profile'
