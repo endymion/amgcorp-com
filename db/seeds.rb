@@ -76,7 +76,7 @@ With the momentum of Bacardi B-Live fueling his ambition, McCabe formed his own 
 
 After joining Angel Management Group, McCabe continued to develop the Bacardi B-Live concept, and also assumed responsibility for all other creative and interactive projects for the company.
 
-As vice president of creative and interactive at Angel Management Group, McCabe currently oversees all technology related projects, including a trio of proprietary software solutions, TicketDriver, ArtistDriver and VenueDriver. He is also in charge of the creative team, which produces marketing and branding campaigns for MGM Grand, New York-New York and Hard Rock Hotel, among other corporate clients.
+As Vice President of Strategy at Angel Management Group, McCabe currently oversees business development at AMG, as well as all technology related projects, including a trio of proprietary software solutions, TicketDriver, ArtistDriver and VenueDriver. He is also in charge of the creative team, which produces marketing and branding campaigns for MGM Grand, New York-New York and Hard Rock Hotel, among other corporate clients.
 EOP
 )
 
