@@ -2,6 +2,7 @@ puts "Creating Profiles..."
 
 Profile.create(
   :name => 'Neil Moffitt',
+  :title => 'Chief Executive Officer',
   :body => <<EOP
 Neil Moffitt is the founder and CEO of Angel Management Group, serving as the figurehead for Angel Management, creating new business and managing the company’s casino relationships at an executive level.  As leader of the company, Moffitt maintains a strong presence, lending his vast experience in the industry to sustain a progressive and dynamic role in the market.
 
@@ -25,6 +26,7 @@ EOP
 
 Profile.create(
   :name => 'Alex Cordova',
+  :title => 'Vice President of Marketing',
   :body => <<EOP
 With twelve years of proprietor experience in nightclubs stretching from New York City to Las Vegas, Alex Cordova has an extensive knowledge of the nightlife industry, encompassing party planning and promotions as well as management and marketing.
 
@@ -42,6 +44,7 @@ EOP
 
 Profile.create(
   :name => 'Derek Silberstein',
+  :title => 'Vice President of Operations',
   :body => <<EOP
 After more than 15 years of experience in the food, beverage and nightlife industry, Derek Silberstein knows his business—and has the track record to prove it.
 
@@ -57,6 +60,7 @@ EOP
 
 Profile.create(
   :name => 'Nick McCabe',
+  :title => 'Vice President of Strategy',
   :body => <<EOP
 Nick McCabe’s career in entertainment and nightlife may have started in the U.K., but it was his passion and drive for success that brought him to the U.S.
 
@@ -78,6 +82,7 @@ EOP
 
 Profile.create(
   :name => 'Omar Gutierrez',
+  :title => 'Executive Director of Operations',
   :body => <<EOP
 Born and raised in Las Vegas, Omar Gutierrez has spent his entire career in the hospitality industry. He has worked with the world’s best chefs and restaurateurs, managed world-class restaurants and operated one of the city’s largest food and beverage operations.
 
@@ -97,6 +102,7 @@ EOP
 
 Profile.create(
   :name => 'Robert Urichuk',
+  :title => 'Vice President of Catering and Sales',
   :body => <<EOP
 Robert began his extensive executive management experience in the hospitality industry back in Alberta, Canada where he directed and assisted in the development and execution in the expansion plans and maintenance of all capital projects as Director of Operations for the Arbco Restaurants Group.
 
