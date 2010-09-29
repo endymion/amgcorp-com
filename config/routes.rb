@@ -9,8 +9,19 @@ AmgcorpCom::Application.routes.draw do
     end
   end
   
-  resources :press, :controller => :press_releases, :as => :press_releases
-  resources :venues
+  resources :press, :controller => :press_releases, :as => :press_releases do
+    member do
+      put :up
+      put :down
+    end
+  end
+  
+  resources :venues do
+    member do
+      put :up
+      put :down
+    end
+  end
   resources :owned_venues, :controller => :venues
   resources :operated_venues, :controller => :venues
   resources :client_venues, :controller => :venues
