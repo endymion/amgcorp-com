@@ -8,6 +8,8 @@
           %a{:href => "##{profile.name.gsub(/\W/,'_')}"}
             = profile.name
         %div.container
+          %h3
+            title goes here
           != RedCloth.new(profile.body).to_html
           = link_to t('edit'), edit_profile_path(profile)
           = link_to t('destroy'), profile, :confirm => t('are_you_sure'), :method => :delete
@@ -19,4 +21,6 @@
           %a{:href => "##{profile.name.gsub(/\W/,'_')}"}
             = profile.name
         %div.container
+          %h3
+            title goes here
           != RedCloth.new(profile.body).to_html        
