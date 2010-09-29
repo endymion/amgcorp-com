@@ -126,7 +126,7 @@ puts "Created #{Profile.count} Profiles."
 
 puts "Creating PressReleases..."
 PressRelease.create(
-  :title => 'Angel Management Group Acquires Pure Management Group',
+  :title => 'Angel Management Group Agrees to Acquire Pure Management Group',
   :body => "Deal Makes AMG Largest Nightlife Company in Las Vegas.",
   :pdf => File.new(Rails.root + 'public/press/amg_pmg.pdf'),
   :image => File.new(Rails.root + 'public/images/page_press/tn_pure.png')
