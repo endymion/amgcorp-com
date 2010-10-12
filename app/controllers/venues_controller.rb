@@ -16,7 +16,7 @@ class VenuesController < ApplicationController
       'Venue'
     end
 
-    @venues = Venue.where(:type=>@venue_type).all
+    @venues = Venue.where(:type=>@venue_type).order(:position).all
 
     respond_to do |format|
       format.html # index.html.erb
@@ -29,14 +29,7 @@ class VenuesController < ApplicationController
   def show
     venue = Venue.find(params[:id])
 
-    path = case venue.class.to_s
-    when 'OwnedVenue' then owned_venues_path
-    when 'OperatedVenue' then operated_venues_path
-    when 'ClientVenue' then client_venues_path
-    else venues_path
-    end
-
-    redirect_to path
+    redirect_to_venue_index(venue)
   end
 
   # GET /venues/new
@@ -105,4 +98,25 @@ class VenuesController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
+  def up
+    (@venue = Venue.find(params[:id])).move_higher
+    redirect_to_venue_index(@venue)
+  end
+  def down
+    (@venue = Venue.find(params[:id])).move_lower
+    redirect_to_venue_index(@venue)
+  end
+  
+  def redirect_to_venue_index(venue)
+    path = case venue.class.to_s
+    when 'OwnedVenue' then owned_venues_path
+    when 'OperatedVenue' then operated_venues_path
+    when 'ClientVenue' then client_venues_path
+    else venues_path
+    end
+
+    redirect_to path
+  end
+
 end

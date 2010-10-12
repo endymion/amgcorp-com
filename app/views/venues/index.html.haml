@@ -2,8 +2,9 @@
   
   - if session[:admin]
     %p= link_to t('.new_venue'), new_venue_path
+    %br
 
-    %div#accordion
+    %div#venues
 
       - for venue in @venues
         %h2
@@ -12,9 +13,14 @@
         %div.container
           = image_tag venue.image.url
           %p
-            = venue.body
+            != RedCloth.new(truncate(venue.body, :length => 120)).to_html
           
+          = link_to t('up'), up_venue_path(venue), :method => :put
+          \/
+          = link_to t('down'), down_venue_path(venue), :method => :put
+          %br
           = link_to t('edit'), edit_venue_path(venue)
+          \/
           = link_to t('destroy'), venue, :confirm => t('are_you_sure'), :method => :delete
 
   - else

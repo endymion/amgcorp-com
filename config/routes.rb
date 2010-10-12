@@ -2,9 +2,26 @@ AmgcorpCom::Application.routes.draw do
 
   root :to => 'root#home'
 
-  resources :profiles, :controller => :profiles
-  resources :press, :controller => :press_releases, :as => :press_releases
-  resources :venues
+  resources :profiles, :controller => :profiles do
+    member do
+      put :up
+      put :down
+    end
+  end
+  
+  resources :press, :controller => :press_releases, :as => :press_releases do
+    member do
+      put :up
+      put :down
+    end
+  end
+  
+  resources :venues do
+    member do
+      put :up
+      put :down
+    end
+  end
   resources :owned_venues, :controller => :venues
   resources :operated_venues, :controller => :venues
   resources :client_venues, :controller => :venues

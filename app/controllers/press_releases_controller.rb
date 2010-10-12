@@ -4,7 +4,7 @@ class PressReleasesController < ApplicationController
   # GET /press_releases
   # GET /press_releases.xml
   def index
-    @press_releases = PressRelease.all
+    @press_releases = PressRelease.order(:position).all
 
     respond_to do |format|
       format.html # index.html.erb
@@ -77,4 +77,14 @@ class PressReleasesController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
+  def up
+    (@press_release = PressRelease.find(params[:id])).move_higher
+    redirect_to :action => :index
+  end
+  def down
+    (@press_release = PressRelease.find(params[:id])).move_lower
+    redirect_to :action => :index
+  end
+
 end

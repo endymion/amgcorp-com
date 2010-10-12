@@ -2,16 +2,23 @@
   
   - if session[:admin]
     %p= link_to t('.new_profile'), new_profile_path
-    %div#accordion
+    %br
+    
+    %div#profiles
       - for profile in @profiles
         %h2
           %a{:href => "##{profile.name.gsub(/\W/,'_')}"}
             = profile.name
         %div.container
+          %div{:style=>'float: right;'}
+            = link_to t('up'), up_profile_path(profile), :method => :put
+            \/
+            = link_to t('down'), down_profile_path(profile), :method => :put
           %h3
             = profile.title
-          != RedCloth.new(profile.body).to_html
+          != RedCloth.new(truncate(profile.body, :length => 120)).to_html
           = link_to t('edit'), edit_profile_path(profile)
+          \/
           = link_to t('destroy'), profile, :confirm => t('are_you_sure'), :method => :delete
 
   - else
