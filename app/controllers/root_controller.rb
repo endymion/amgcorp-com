@@ -12,4 +12,8 @@ class RootController < ApplicationController
     redirect_to root_path    
   end
 
+  def tickets
+    redirect_to 'http://ticketdriver.com/amg/buy/tickets'
+  end
+
 end
