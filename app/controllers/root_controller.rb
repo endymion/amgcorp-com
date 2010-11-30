@@ -17,8 +17,8 @@ class RootController < ApplicationController
   end
   
   
-  before_filter :authenticate, :only => :wetrepublic
-  def authenticate
+  before_filter :authenticate_wet, :only => :wetrepublic
+  def authenticate_wet
     authenticate_or_request_with_http_basic do |username, password|
       username == "wet" && password == "republic"
     end
