@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   before_filter :redirect_to_correct_domain
   def redirect_to_correct_domain
     if request.host =~ /amgcorp\.com$/i
-      redirect_to "http://angelmanagementgroup.com"
+      redirect_to "http://angelmanagementgroup.com#{request.fullpath}"
     end
   end
 
