@@ -15,5 +15,16 @@ class RootController < ApplicationController
   def tickets
     redirect_to 'http://ticketdriver.com/amg/buy/tickets'
   end
+  
+  
+  before_filter :authenticate, :only => :wetrepublic
+  def authenticate
+    authenticate_or_request_with_http_basic do |username, password|
+      username == "wet" && password == "republic"
+    end
+  end
+  
+  def wetrepublic
+  end
 
 end

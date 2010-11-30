@@ -36,6 +36,8 @@ AmgcorpCom::Application.routes.draw do
 
   match 'tickets' => 'root#tickets', :as => :tickets
 
+  match 'wetrepublic' => 'root#wetrepublic', :as => :wetrepublic
+
   match 'admin' => 'root#admin'
   match 'sign_out' => 'root#sign_out'
 
