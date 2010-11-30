@@ -24,7 +24,9 @@ class RootController < ApplicationController
     end
   end
   
+  
   def wetrepublic
+    render :layout => false
   end
 
 end
