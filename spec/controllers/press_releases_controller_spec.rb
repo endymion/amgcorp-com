@@ -16,7 +16,7 @@ describe PressReleasesController do
     it "assigns all press_releases as @press_releases" do
       PressRelease.stub(:all) { [mock_press_release] }
       get :index
-      assigns(:press_releases).should eq([mock_press_release])
+      assigns(:all_press_releases).should eq([mock_press_release])
     end
   end
 

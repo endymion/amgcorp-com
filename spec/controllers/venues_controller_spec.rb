@@ -2,6 +2,12 @@ require 'spec_helper'
 
 describe VenuesController do
 
+  before(:each) do
+    @credentials = ActionController::HttpAuthentication::Basic.encode_credentials(
+      ENV['ADMIN_USERNAME'], ENV['ADMIN_PASSWORD'])
+    request.env['HTTP_AUTHORIZATION'] = @credentials
+  end
+
   def mock_venue(stubs={})
     @mock_venue ||= mock_model(Venue, stubs).as_null_object
   end
