@@ -5,7 +5,7 @@ class VenuesController < ApplicationController
   # GET /venues.xml
   def index
 
-    @venue_type = case request.url
+    session[:venue_type] = @venue_type = case request.url
     when /owned/
       'OwnedVenue'
     when /operated/
@@ -59,6 +59,8 @@ class VenuesController < ApplicationController
   # POST /venues.xml
   def create        
     @venue = Venue.new(params[:venue])
+
+    @venue.type = session[:venue_type]
 
     respond_to do |format|
       if @venue.save
