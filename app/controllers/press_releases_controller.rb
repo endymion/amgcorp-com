@@ -5,6 +5,7 @@ class PressReleasesController < ApplicationController
   # GET /press_releases.xml
   def index
     @press_releases = PressRelease.order(:position).all
+    @all_press_releases = PressRelease.all
 
     respond_to do |format|
       format.html # index.html.erb

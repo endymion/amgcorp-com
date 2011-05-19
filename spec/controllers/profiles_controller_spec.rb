@@ -16,7 +16,7 @@ describe ProfilesController do
     it "assigns all profiles as @profiles" do
       Profile.stub(:all) { [mock_profile] }
       get :index
-      assigns(:profiles).should eq([mock_profile])
+      assigns(:all_profiles).should eq([mock_profile])
     end
   end
 

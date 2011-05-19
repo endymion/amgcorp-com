@@ -29,7 +29,7 @@
 
     %div#nav
       %a{:href => "/"}
-        %img{:src => "/images/global/amglogo.png", :width => "207", :height => "67" }
+        = image_tag("/images/global/amglogo.png", :width => "207", :height => "67" )
       %ul
         %li
           = link_to 'About Us', public_about_us_path

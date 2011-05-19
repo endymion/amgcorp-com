@@ -5,7 +5,7 @@ class ProfilesController < ApplicationController
   # GET /profiles.xml
   def index
     @profiles = Profile.order(:position).all
-
+    @all_profiles = Profile.all
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @profiles }
